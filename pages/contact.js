@@ -144,7 +144,7 @@ export default function Contact() {
         <meta property="og:image:alt" content={contact.meta.alt} />
         <meta property="og:title" content={contact.meta.title} />
         <meta property="og:description" content={contact.meta.description} />
-        <meta property="og:site_name" content="Temp Suscip" />
+        <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={contact.meta.url} />
       </Head>
@@ -152,13 +152,15 @@ export default function Contact() {
       <section className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">
         <div className="inline-flex md:w-1/2 md:h-3/6 md:pl-4">
           <div className="text text-center md:text-left md:w-5/6 h-fit md:h-1/2">
-            <h1 className="text-2xl font-semibold pb-1.5 md:pb-3 pt-6 md:pt-0 inline-flex align-baseline ml-4 md:ml-0">
+            <h1 className="text-2xl font-semibold pb-1.5 md:pb-3 pt-8 md:pt-0 inline-flex align-baseline ml-4 md:ml-0">
               {contact.section.h1}<Icon />
             </h1>
-            <p className="md:max-w-sm min-w-full px-10 md:px-0 space-y-0 md:space-y-1.5 pb-6">
-              <span className="items-center md:w-full text-sm font-light leading-tighter">{contact.section.div.p}</span>
-              <span className="whitespace-pre-line items-center w-full text-sm font-light leading-tighter"><Href span={contact.section.div.span} href={contact.section.div.href} /></span>
-            </p>
+            <div className="px-8 md:px-0">
+              <p className="md:max-w-sm min-w-full space-y-0 md:space-y-1.5 pb-8 leading-tight md:leading-normal">
+                <span className="items-center md:w-full text-sm font-light">{contact.section.div.p}</span>
+                <span className="whitespace-pre-line items-center w-full text-sm font-light"><Href span={contact.section.div.span} href={contact.section.div.href} /></span>
+              </p>
+            </div>
           </div>
         </div>
         <Form />

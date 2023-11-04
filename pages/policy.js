@@ -22,7 +22,7 @@ export default function Policy() {
         <meta property="og:image:alt" content={policy.meta.alt} />
         <meta property="og:title" content={policy.meta.title} />
         <meta property="og:description" content={policy.meta.description} />
-        <meta property="og:site_name" content="Temp Suscip" />
+        <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={policy.meta.url} />
       </Head>

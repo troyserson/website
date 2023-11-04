@@ -1,12 +1,11 @@
 {
   "repository": {
-    "url": "https://github.com/tannertanner1/pages-router"
+    "url": "https://github.com/troyserson/website"
   },
   "bugs": {
-    "url": "https://github.com/tannertanner1/pages-router/issues"
+    "url": "https://github.com/troyserson/website/issues"
   },
   "scripts": {
-    "new": "node scripts/new.js",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,18 +13,14 @@
   },
   "dependencies": {
     "@calcom/embed-react": "^1.3.0",
-    "@tailwindcss/typography": "^0.5.10",
     "@vercel/analytics": "^1.1.1",
     "date-fns": "^2.30.0",
-    "gray-matter": "^4.0.3",
     "next": "^13.4.10",
     "nodemailer": "^6.9.4",
     "react": "^18.2.0",
     "react-calendly": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
-    "remark": "^14.0.3",
-    "remark-html": "^15.0.2",
     "sharp": "^0.32.6"
   },
   "devDependencies": {

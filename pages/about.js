@@ -38,7 +38,7 @@ export default function About() {
         <meta property="og:image:alt" content={about.meta.alt} />
         <meta property="og:title" content={about.meta.title} />
         <meta property="og:description" content={about.meta.description} />
-        <meta property="og:site_name" content="Temp Suscip" />
+        <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={about.meta.url} />
       </Head>
