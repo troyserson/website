@@ -43,7 +43,7 @@ export const index = {
     alt: img[1].alt,
     title: `Home | Troy Serson`,
     description: `Learn more about lessons online or sign-up today!`,
-    url: `https://pages-router-eight.vercel.app`,
+    url: `https://website-tan-mu-23.vercel.app`,
   },
   section: [
     {
@@ -116,7 +116,7 @@ export const about = {
     alt: img[1].alt,
     title: `About | Troy Serson`,
     description: `About Troy Serson, the studio policy, and online lessons`,
-    url: `https://pages-router-eight.vercel.app/about`,
+    url: `https://website-tan-mu-23.vercel.app/about`,
   },
   section: [
     { 
@@ -177,7 +177,7 @@ export const calendar = {
     alt: img[1].alt,
     title: `Calendar | Troy Serson`,
     description: `Important dates`,
-    url: `https://pages-router-eight.vercel.app/calendar`,
+    url: `https://website-tan-mu-23.vercel.app/calendar`,
   },
   section: {
     h1: `Important Dates`,
@@ -203,7 +203,7 @@ export const policy = {
     alt: img[1].alt,
     title: `Policy | Troy Serson`,
     description: `Studio policy`,
-    url: `https://pages-router-eight.vercel.app/policy`,
+    url: `https://website-tan-mu-23.vercel.app/policy`,
   },
   section: {
     h1: `Studio Policy`,
@@ -301,7 +301,7 @@ export const contact = {
     alt: img[1].alt,
     title: `Contact | Troy Serson`,
     description: `Get in touch through our email form!`,
-    url: `https://pages-router-eight.vercel.app/contact`,
+    url: `https://website-tan-mu-23.vercel.app/contact`,
   },
   section: {
     h1: `Get in touch`,
@@ -321,7 +321,7 @@ export const signUp = {
     alt: img[1].alt,
     title: `Sign Up | Troy Serson`,
     description: `Information regarding studio hours and availability`,
-    url: `https://pages-router-eight.vercel.app/sign-up`,
+    url: `https://website-tan-mu-23.vercel.app/sign-up`,
   },
   section: {
     url: `https://calendly.com/tannertanner1/trial`,
