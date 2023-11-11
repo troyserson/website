@@ -34,7 +34,6 @@ export default function Index() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.svg" />
         <title>{index.meta.title}</title>
         <meta name="title" content={index.meta.title} />
         <meta name="description" content={index.meta.description} />
@@ -49,11 +48,10 @@ export default function Index() {
 
       <section>
         <div className="h-screen w-full relative">
-          <Image className="bg-transparent h-full w-full object-cover object-center absolute inset-0" src={index.section[0].image} alt={index.section[0].alt} priority />
+          <Image className="absolute inset-0 bg-transparent h-full w-full object-cover object-center" src={index.section[0].image} alt={index.section[0].alt} priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 opacity-70" />
-          {/* <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-900/50 opacity-70" /> */}
           <div className="absolute inset-10 flex flex-col items-left md:items-center md:justify-center text-left md:text-center h-1/2">
-            <h1 className="mt-20 md:mt-60 flex flex-col md:flex-row md:gap-y-3 leading-tight md:leading-normal text-6xl md:text-7xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient">
+            <h1 className="mt-16 md:mt-60 flex flex-col md:flex-row md:gap-y-3 leading-tight md:leading-normal text-6xl md:text-7xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient">
               <span>{index.section[0].h1.span[0]} </span>
               <span>{index.section[0].h1.span[1]} </span>
               <span>{index.section[0].h1.span[2]} </span>
@@ -63,8 +61,8 @@ export default function Index() {
               <span className="text-xl font-semibold leading-[1.5] tracking-normal">{index.section[0].h2}</span>
             </h2>
             
-            <div className="ml-2 md:pl-0 mt-10 md:mt-8 items-left md:items-center md:justify-center text-left md:text-center align-baseline space-x-6 md:space-x-12">
-              <Link href={index.section[0].button[0].href} className="drop-shadow-lg" aria-label={index.section[0].button[0].label}>
+            <div className="ml-1 md:pl-0 mt-10 md:mt-8 items-left md:items-center md:justify-center text-left md:text-center align-baseline gap-1 md:space-x-12">
+              <Link href={index.section[0].button[0].href} className="drop-shadow-lg">
                 <button className="inline-flex text-invert text-base font-medium border-0 transition duration-300">
                   <span className="relative rounded-md px-5 py-2.5 transition-all ease-in bg-invert lg:hover:-translate-y-1 lg:hover:scale-110">
                     {index.section[0].button[0].span}
@@ -88,7 +86,8 @@ export default function Index() {
           <h1 className="text-2xl font-semibold leading-tight tracking-wide mx-auto">{index.section[1].h1}</h1>
           <h2 className="text-sm font-light leading-loose">{index.section[1].h2}</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 p-5 justify-evenly">
+
+        <div className="flex flex-wrap place-content-center gap-5 pl-4 pr-4 pt-6 pb-8">
           {index.section[1].div.map((props, index) => (
             <Testimonial key={index} {...props} />
           ))}

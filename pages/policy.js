@@ -14,7 +14,6 @@ export default function Policy() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.svg" />
         <title>{policy.meta.title}</title>
         <meta name="title" content={policy.meta.title} />
         <meta name="description" content={policy.meta.description} />

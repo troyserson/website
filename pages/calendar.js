@@ -5,7 +5,6 @@ export default function Calendar() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.svg" />
         <title>{calendar.meta.title}</title>
         <meta name="title" content={calendar.meta.title} />
         <meta name="description" content={calendar.meta.description} key="desc" />

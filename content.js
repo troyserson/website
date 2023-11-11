@@ -12,10 +12,10 @@ export const img = [
 
 /* @note components/layout */
 export const layout = {
+  name: {
+    span: [ `Troy`, `Serson` ],
+  },
   navbar: {
-    icon: {
-      span: [ `Troy`, `Serson` ],
-    },
     div: [
       { href: `/about`, span: `About` },
       { href: `/calendar`, span: `Calendar` },
@@ -28,7 +28,6 @@ export const layout = {
     },
   },
   footer: {
-    copy: `Troy Serson`,
     icon: [
       { href: `https://www.youtube.com/@troyserson`, label: `YouTube @troyserson` },
       { href: `https://www.tiktok.com/@troyserson`, label: `TikTok @troyserson` },
@@ -54,7 +53,7 @@ export const index = {
       },
       h2: `Discover why tomorrow's brightest are taking music lessons online`,
       button: [
-        { href: `/about`, span: `Learn More` },
+        { href: `/about`, span: `About Lessons` },
         { href: `/sign-up`, span: `Free Trial` },
       ],
     },
@@ -67,7 +66,7 @@ export const index = {
         { id: `Teresa C.`, date: `Jun 25, 2020`, p: `Great experience! Excellent teacher.. very engaging and responsive!` },
         { id: `Mrs. S`, date: `Jun 19, 2020`, p: `Absolutely wonderful teacher and class!  Teacher spent time with each student and gave them individual attention.  The song selections were challenging but he walked students through step by step and my son was playing beautifully after just 4 classes!` },
         { id: `Shannon L.`, date: `Jun 18, 2020`, p: `This class was fantastic! My son had barely even ever picked up a guitar, so I was not sure how an online guitar lesson would be but Troy was great at explaining  everything clearly and in a way that was easy for the kids to understand. He was able to give the kids one on one help during the class when they needed it, and offered opportunities for additional help outside of class time if needed.  It was also great to be able to re-watch the lessons after class which enabled me (with zero guitar experience) to help my son with whatever he was practicing between classes. Definitely going to sign my son up for another class with Troy!` },
-        { id: `Margo D.`, date: `May 27, 2020`, p: `Excellent intro. to classical guitar.  My daughter got a lot of good pointers and learned 2 great songs.` },
+        // { id: `Margo D.`, date: `May 27, 2020`, p: `Excellent intro. to classical guitar.  My daughter got a lot of good pointers and learned 2 great songs.` },
         { id: `Amanda T.`, date: `May 20, 2020`, p: `My son really enjoyed this class. Already signed him up for other classes offered by Troy!` },
         { id: `Jenner S.`, date: `May 14, 2020`, p: `This class was very educational and the teacher is very very nice and he will work on a subject for however long it takes too get it through to someone that does not understand.` },
         { id: `Tianyi Z.`, date: `Feb 5, 2022`, p: `Perfect introduction to playing the ukulele. Troy teaches a level that is fun, thorough and  confidence building. Outschool tools are excellent. This is our first experience with outschool and we will continue. We liked Troy's teaching so much we will continue on past the group intro class!` },
@@ -88,7 +87,7 @@ export const index = {
         { id: `Jihae Y.`, date: `Jun 19, 2020`, p: `Troy was patient and noticed when kids needed a break to stretch and share.  He went at a nice pace for my seven-year-old and checked in with everyone often.` },
         { id: `Molly F.`, date: `Jun 18, 2020`, p: `Troy is a fabulous instructor, and great with kids (even with an obstinate 6-year-old). He recognizes when kids need a break to stretch, finds fun songs to share, and takes time to do individual help as much as possible in a group setting.` },
         { id: `Ashley U.`, date: `Jun 18, 2020`, p: `My daughter loved this class. Troy went above and beyond to help her learn the basics of guitar playing. In four weeks of classes, she’s attempting her favorite tunes without assistance.` },
-        { id: `Nicole M.`, date: `May 22, 2020`, p: `My daughter loved this class and came away with a great ukulele foundation!` },
+        // { id: `Nicole M.`, date: `May 22, 2020`, p: `My daughter loved this class and came away with a great ukulele foundation!` },
         { id: `Todd B.`, date: `May 21, 2020`, p: `My daughter is a bit immature for her age (8 years old) she was engaged and very excited for the class! I’d hear her play the ukulele off and on throughout the week until it was time for her to take class again.` },
         { id: `Diana W.`, date: `May 21, 2020`, p: `Troy is very patient and works well with kids. My granddaughter received an excellent startup on her ukulele! She will be taking some private classes from Troy next.` },
         { id: `Allison B.`, date: `May 19, 2020`, p: `Troy was fantastic with my son. Very patient, and helped my son to love playing his Ukulele. Would definitely recommend this class!` },
@@ -103,7 +102,7 @@ export const index = {
         { id: `Ascheman`, date: `May 16, 2020`, p: `My daughter enjoyed the class.  She has been practicing the song he taught her.` },
         { id: `Kelly K.`, date: `May 16, 2020`, p: `Great intro to guitar for someone who has never picked one up.` },
         { id: `Courtney L.`, date: `Apr 23, 2020`, p: `Troy was able to cover a lot of information in a digestible way for kids. Detailed slides and visuals were helpful.` },
-        { id: `Marlyn T.`, date: `Apr 17, 2020`, p: `Troy was able to cover a lot of information in a digestible way for kids. Detailed slides and visuals were helpful.` },
+        // { id: `Marlyn T.`, date: `Apr 17, 2020`, p: `Troy was able to cover a lot of information in a digestible way for kids. Detailed slides and visuals were helpful.` },
       ],
     },
   ],
@@ -120,7 +119,7 @@ export const about = {
   },
   section: [
     { 
-      a: `troy`, 
+      anchor: `troy`, 
       h1: `About Troy`,
       h2: `Guitar & Ukulele Teacher Since 2011`,
       div: {
@@ -136,7 +135,7 @@ export const about = {
       alt: img[1].alt,
     },
     { 
-      a: `policy`,
+      anchor: `policy`,
       h1: `Studio Policy`,
       h2: `Music Made Accessible & Enjoyable`,
       div: {
@@ -151,7 +150,7 @@ export const about = {
       alt: img[2].alt,
     },
     { 
-      a: `lessons`,
+      anchor: `lessons`,
       h1: `Online Lessons`,
       h2: `Music Lessons Anywhere with Troy`,
       div: {
@@ -160,7 +159,6 @@ export const about = {
 
         `,
         span: [ `For more info on lessons, visit our `, `contact`, ` page or schedule a free trial.
-        
         ` ],
         href: `/contact`,
       },

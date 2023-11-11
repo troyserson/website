@@ -9,7 +9,6 @@ export default function SignUp() {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.svg" />
         <title>{signUp.meta.title}</title>
         <meta name="title" content={signUp.meta.title} />
         <meta name="description" content={signUp.meta.description} key="desc" />
