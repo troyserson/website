@@ -158,8 +158,7 @@ export const about = {
         In-person lessons are available for local students, but online classes are the preferred choice due to their quality and convenience.
 
         `,
-        span: [ `For more info on lessons, visit our `, `contact`, ` page or schedule a free trial.
-        ` ],
+        span: [ `For more info on lessons, visit our `, `contact`, ` page or schedule a free trial.` ],
         href: `/contact`,
       },
       image: img[3].image,

@@ -50,41 +50,45 @@ export default function Index() {
         <div className="h-screen w-full relative">
           <Image className="absolute inset-0 bg-transparent h-full w-full object-cover object-center" src={index.section[0].image} alt={index.section[0].alt} priority />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 opacity-70" />
-          <div className="absolute inset-10 flex flex-col items-left md:items-center md:justify-center text-left md:text-center h-1/2">
-            <h1 className="mt-16 md:mt-60 flex flex-col md:flex-row md:gap-y-3 leading-tight md:leading-normal text-6xl md:text-7xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient">
-              <span>{index.section[0].h1.span[0]} </span>
-              <span>{index.section[0].h1.span[1]} </span>
-              <span>{index.section[0].h1.span[2]} </span>
-            </h1>
-            
-            <h2 className="pl-2 md:pl-0 text-white pb-6 pt-1/3 w-3/4 leading-tight items-left md:items-center md:justify-center text-left md:text-center">
-              <span className="text-xl font-semibold leading-[1.5] tracking-normal">{index.section[0].h2}</span>
-            </h2>
-            
-            <div className="ml-1 md:pl-0 mt-10 md:mt-8 items-left md:items-center md:justify-center text-left md:text-center align-baseline gap-1 md:space-x-12">
-              <Link href={index.section[0].button[0].href} className="drop-shadow-lg">
-                <button className="inline-flex text-invert text-base font-medium border-0 transition duration-300">
-                  <span className="relative rounded-md px-5 py-2.5 transition-all ease-in bg-invert lg:hover:-translate-y-1 lg:hover:scale-110">
-                    {index.section[0].button[0].span}
-                  </span>
-                </button>
-              </Link>
-              <Link href={index.section[0].button[0].href} className="drop-shadow-lg ml-2 md:ml-6">
-                <button className="inline-flex p-0.5 text-base font-medium rounded-lg text-zinc-900 dark:text-white shadow-lg dark:shadow-lg shadow-blue-500/40 bg-gradient-to-br from-orange-700 via-blue-500 to-green-400 group bg-300% animate-gradient">
-                  <span className="relative rounded-md px-5 py-2.5 transition-all ease-in bg duration-7 lg:group-hover:bg-opacity-0">
-                    {index.section[0].button[1].span}
-                  </span>
-                </button>
-              </Link>
+          
+          <div className="absolute inset-10 -ml-1 md:pl-8 lg:pl-10">
+            <div className="inset-0 h-1/2 md:w-3/4 mt-8 md:pt-10 lg:pt-32 justify-between">
+              <h1 className="flex flex-col lg:flex-row leading-tight lg:leading-normal text-6xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient">
+                <span>{index.section[0].h1.span[0]} </span>
+                <span>{index.section[0].h1.span[1]} </span>
+                <span>{index.section[0].h1.span[2]} </span>
+              </h1>
+              
+              <h2 className="ml-1 pt-4 lg:pt-0 sm:w-1/2 md:w-3/4 text-white pb-6 leading-tight">
+                <span className="text-xl font-semibold leading-[1.5] tracking-normal">{index.section[0].h2}</span>
+              </h2>
+              
+              <div className="ml-1 md:pl-0 mt-6 md:mt-8 align-baseline gap-1 md:space-x-6 lg:space-x-8">
+                <Link href={index.section[0].button[0].href} className="drop-shadow-lg">
+                  <button className="inline-flex text-invert text-base font-medium border-0 transition duration-300">
+                    <span className="relative rounded-md px-5 py-2.5 transition-all ease-in bg-invert lg:hover:-translate-y-1 lg:hover:scale-110">
+                      {index.section[0].button[0].span}
+                    </span>
+                  </button>
+                </Link>
+                <Link href={index.section[0].button[0].href} className="drop-shadow-lg ml-2 md:ml-6">
+                  <button className="inline-flex p-0.5 text-base font-medium rounded-lg text-zinc-900 dark:text-white shadow-lg dark:shadow-lg shadow-blue-500/40 bg-gradient-to-br from-orange-700 via-blue-500 to-green-400 group bg-300% animate-gradient">
+                    <span className="relative rounded-md px-5 py-2.5 transition-all ease-in bg duration-7 lg:group-hover:bg-opacity-0">
+                      {index.section[0].button[1].span}
+                    </span>
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
+          
         </div>
       </section>
 
       <section>
         <div className="text bg text-center pt-12 pb-4">
-          <h1 className="text-2xl font-semibold leading-tight tracking-wide mx-auto">{index.section[1].h1}</h1>
-          <h2 className="text-sm font-light leading-loose">{index.section[1].h2}</h2>
+          <h1 className="text-2xl font-semibold leading-normal tracking-wide mx-auto">{index.section[1].h1}</h1>
+          <h2 className="text-base font-light leading-loose">{index.section[1].h2}</h2>
         </div>
 
         <div className="flex flex-wrap place-content-center gap-5 pl-4 pr-4 pt-6 pb-8">
