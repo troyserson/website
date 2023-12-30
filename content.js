@@ -49,11 +49,11 @@ export const index = {
       image: img[0].image,
       alt: img[0].alt,
       h1: {
-        span: [ `Learn.`, `Guitar.`, `Online.` ],
+        span: [ `Learn To Play Guitar (Without Leaving Your House)` ],
       },
-      h2: `Discover why tomorrow's brightest are taking music lessons online`,
+      h2: `Discover why tomorrow’s brightest are taking music lessons online`,
       button: [
-        { href: `/about`, span: `About Lessons` },
+        { href: `/sign-up`, span: `About Lessons` },
         { href: `/sign-up`, span: `Free Trial` },
       ],
     },
@@ -185,16 +185,16 @@ export const calendar = {
   section: {
     h1: `Important Dates`,
     div: [
-      { date: `December 24 - January 2`, description: `Studio Closed for Winter Break ☃️` },
-      { date: `February 28 - March 4`, description: `Parent Teacher Week 🧑🏻‍🏫` },
-      { date: `March 5 - March 22`, description: `Studio Closed for Teacher Vacation 🇮🇹` },
-      { date: `May 7`, description: `Spring Studio Recital 🌸` },
-      { date: `July 25 - July 29`, description: `Parent Teacher Week 🧑🏻‍🏫` },
-      { date: `August 13`, description: `Summer Studio Recital ☀️` },
-      { date: `August 19 - September 4`, description: `Studio Closed for Summer Break ⛱️` },
-      { date: `November 7 - November 11`, description: `Parent Teacher Week 🧑🏻‍🏫` },
-      { date: `December 10`, description: `Winter Studio Recital ❄️` },
-      { date: `December 16 - January 1`, description: `Studio Closed for Winter Break 🏂` },
+      { date: `December 16 - January 1`, description: `Studio Closed for Winter Break ☃️` },
+      { date: `Spring TBD`, description: `Studio Closed for Teacher Vacation 🛫` },
+      { date: `April 15 - April 19`, description: `Parent Teacher Week 🧑🏻‍🏫` },
+      { date: `May 5`, description: `Spring Studio Recital 🌸` },
+      { date: `July 22 - July 26`, description: `Parent Teacher Week 🧑🏻‍🏫` },
+      { date: `August 11`, description: `Summer Studio Recital ☀️` },
+      { date: `August 17 - September 2`, description: `Studio Closed for Summer Break ⛱️` },
+      { date: `November 16 - November 20`, description: `Parent Teacher Week 🧑🏻‍🏫` },
+      { date: `December 15`, description: `Winter Studio Recital ❄️` },
+      { date: `December 21 - January 5`, description: `Studio Closed for Winter Break 🏂` },
     ],
   },
 };
@@ -211,86 +211,94 @@ export const policy = {
   section: {
     h1: `Studio Policy`,
     p: [
-    `Last updated on January 16, 2023`,
-    `This policy outlines the commitments of our teachers, expectations from students, details regarding tuition and payment, our approach to scheduling and cancellations, handling of music and materials, term commitments, privacy in media sharing, and the acknowledgment of our policy by students and parents. It is essential to familiarize yourself with these guidelines to ensure a positive and productive experience in our music studio.`,
+    `Effective date: January 2, 2024`,
     ],
     div: [
       { 
         a: `teacher-commitments`,
-        h2: `Teacher Commitments`,
-        p: `We're dedicated to providing a positive and inspiring learning experience for every student. Our goal is to motivate and empower each student to drive their music education and achieve their unique musical aspirations. We tailor our curriculum to cater to each student's individual learning needs and interests.
+        h2: `Teacher Responsibilities`,
+        p: `Troy will teach students the language of music in a positive and enthusiastic environment. It is his goal to inspire each student, and empower them to influence their music education with input based on their interest and long term goals. Troy will tailor the curriculum to match each student’s specific learning needs, and their musical goals.
         `
       },
       { 
         a: `student-expectations`,
-        h2: `Student Expectations`,
-        p: `To maximize progress, students are encouraged to attend lessons promptly, well-prepared, and with their instruments. While some flexibility is allowed in practice routines, daily practice is recommended unless otherwise discussed. Questions about assignments are encouraged to ensure clear comprehension of goals.
+        h2: `Student and Family Responsibilities`,
+        p: `Students agree to arrive at each lesson punctually, well prepared, and with their instrument. To make good progress, regular quality practice is necessary. While some students perform well with a more flexible (irregular) practice routine, it is encouraged that most students practice daily unless otherwise discussed. Students and parents are expected to ask questions about assignments as needed.
 
-        Parents, please share anything at home or school affecting your child's learning for better support.
+        Note to Parents: If something is happening at home or school that is affecting your child, please let Troy know. The more information he has, the more he can be sensitive to the needs of your child.
 
-        Students of all ages are encouraged to participate in studio recitals and explore musical opportunities, and we're here to help with preparation when such opportunities arise.
+        All students are encouraged to perform in studio recitals (in May, August, and December each year), and to audition for local bands, ensembles, and competitions if it is in line with their musical goals. If an opportunity arises, please bring information about the opportunity to your next lesson so Troy can help your student prepare.
         
-        Students should have their own instrument for practice at home. If you need advice on selecting an instrument, don't hesitate to ask. Recommendations can be made based on what would work best for you or your child.
+        Students must have their own instrument to practice at home. If you have questions, or would like input on the purchase of an instrument, please let Troy know, and if it helps, he can make specific recommendations based on what instrument shapes, sizes, and features would work best for your student.
         `
       },
       { 
         a: `tuition-and-payment`,
-        h2: `Tuition and Payment`,
-        p: `Monthly tuition secures your weekly slot, though it may not align precisely with attended lessons.
+        h2: `Tuition and Schedule`,
+        p: `Please note that tuition reserves the weekly time slot, but may not directly correlate with lessons received if the student does not attend the scheduled lesson times.
 
-        Tuition rates are based on a minimum of 44 lessons annually, with advanced notice of holiday-related closures. Two additional weeks accommodate teacher illness or extra lessons.
+        Flat monthly tuition rates are based on the number of lessons guaranteed by the teacher in the calendar year. There will be a minimum of 44 lessons offered throughout the year, and the weeks where lessons are not held (due to holidays etc) will be communicated in advance. There are an additional two weeks built into the studio calendar to accommodate teacher illness. In the case these are not used, lessons may be scheduled at no extra charge. In the case that there is a 5th weekly lesson in the month, this has been factored into the flat-rate tuition.
 
-        Payments are non-refundable and billed automatically on the 1st of each month. Payments are late after one week; incurring a 15% fee and may affect enrollment. Contact us for payment issues or alternative arrangements.
+        Up to date information about studio closures can be found here.
 
-        Changes to weekly schedules are feasible subject to availability.
+        All payments are non-refundable. After the first payment, invoicing and payment will run automatically on the same day. Tuition will be drawn on the 1st of each month from the method on file. All automatic payments for Canadians will be run through Square. All automatic payments from other countries will be run through Stripe.
 
-        To cancel lessons, notify us via email 7 days before the month's end. Late cancellations result in automatic billing, with the option to attend paid lessons that month, followed by cancellations in the next month. Paid lessons are transferable with prior notification to your teacher.
+        In the event that a payment is returned or declined, you will be contacted by email. Invoices unpaid by the 8th of each month will be charged a 15% late fee. Recurring late payments may result in termination of the student’s enrollment.
+
+        If you are having trouble making payments on invoices, or need to make alternative arrangements, please contact Troy at your earliest convenience.
+
+        Changes to weekly schedules are allowed, subject to availability of desired spots.
+
+        In order to cancel your lessons, written notice must be received via email 7 calendar days prior to the end of the month. In the case that notice is not received by that deadline, the monthly tuition amount will be run automatically on the first of the month, and students have the option to attend all paid lessons that month. Lessons will then cancel for the following month.
+
+        Paid for lessons are transferable to another student, but you must notify Troy of this prior to the lesson with the student the lessons have been transferred to.
         `
       },  
       { 
         a: `schedule-and-cancellations`,
-        h2: `Schedule and Cancellations`,
-        p: `Life can get busy. If you're running late or miss a lesson, let us know; you can make up missed lessons between the missed one and your next regular session.
+        h2: `Cancellation Policy`,
+        p: `Lessons where a student has not arrived within 10 minutes of the start of their scheduled lesson, and you have not contacted Troy about running late will be marked as a no show. Students will be allowed to make up the lesson up to one month after the date of the missed lesson. Makeup lessons are subject to teacher availability and are not guaranteed.
 
-        Cancellations with advance notice allow for makeup lessons in the same month, subject to teacher availability.
+        In the event of Troy canceling a lesson, as much notice as possible given the circumstance will be given. If Troy cancels a lesson outside of the guaranteed 44 annual lessons, he will refund you for that time, or reschedule the lesson within 30 days.
         
-        If we need to cancel a lesson, we'll provide notice and arrange refunds or rescheduling within 30 days.
-        
-        Open communication is vital; if you miss three lessons without a quick message, we'll assume you won't continue, and your slot will open for a waitlist student, with no refunds for that month.
+        If a student misses three lessons in a row without communicating why they are absent at any point within that three week period, it is assumed they are not coming back, their regular time slot will be offered to wait listed students, and the student will not receive a refund for the calendar month. To avoid this ever happening, please send Troy a quick email or text if you’re going to miss one or more lessons, so he is aware of what’s happening.        
         `
       },  
       { 
         a: `music-and-materials`,
         h2: `Music and Materials`,
-        p: `Feel free to bring any music-related materials that inspire you or raise questions. Otherwise, your teacher will provide all sheet music and exercises.
+        p: `Students are encouraged to bring in outside music related materials that inspire them, or that they have questions about. Otherwise, all sheet music and exercises will be provided by Troy during the lesson.
 
-        If you discover music you'd like to learn that we don't have, and it's suitable for your level, we'll purchase it for you. In such cases, get in touch with your teacher outside of your regular lesson time, giving them a chance to review and prepare teaching notes on the piece before your lesson.
+        In the event that a student finds music they would like to learn that Troy does not already have, if the difficulty level of the piece of music is appropriate, Troy will purchase the music and provide it to the student. When pursuing repertoire in this way, students are encouraged to contact Troy outside of their regular lesson time to give him an opportunity to review the piece and prepare teaching notes on it prior to the lesson.
         `
       },
       { 
         a: `term-commitment`,
         h2: `Term Commitment`,
-        p: `When you enroll, you secure your spot for the entire term:
+        p: `When students enroll, they are reserving their place in the studio for the entire term.
 
         Fall Term: September to December
         Spring Term: January to May
         Summer Term: June to August
         
-        Please note, to guarantee a spot for the fall term, you should enroll in lessons during the summer term.
+        Please note that a student’s spot will not be guaranteed for the fall term if they were not enrolled in lessons during the summer term.
         `
       },
       { 
         a: `media-and-privacy`,
         h2: `Media and Privacy`,
-        p: `Occasionally, we share photos and short videos of our students on our website and social media. These posts encourage and assist other students and teachers.
+        p: `From time to time, Troy will use photos and short videos of students on the studio website, or in social media posts. These videos and posts are encouraging to other students, and helpful for parents of prospective students.
 
-        If you'd prefer not to have yours, or your child's image used, please let us know. We identify students only by their first names.
+        Photo and Video Release Form (Adult Student)
+        Photo and Video Release Form (Child Student)
+
+        If you do not want yours, or your child’s image(s) to be used, please let Troy know. Students will only ever be identified by first name.
         `
       },
       { 
         a: `policy-acknowledgment`,
         h2: `Policy Acknowledgment`,
-        p: `By enrolling and paying tuition for yourself or your child in Troy Serson's studio, you confirm your understanding and agreement with the studio policies for the 2023 calendar year.
+        p: `By enrolling and paying tuition for myself or my child in Troy Serson’s studio, I certify that I understand and agree to the studio policies for the 2024 calendar year.
         `
       },
     ],
