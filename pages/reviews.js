@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 
 import { reviews } from "../content.js";
 
@@ -11,7 +9,6 @@ export function Star() {
     </svg>
   );
 }
-
 export function Rating() {
   return (
     <div className="flex flex-row mr-1 p-0.5 space-x-1">
@@ -19,7 +16,6 @@ export function Rating() {
     </div>
   );
 }
-
 export const Testimonial = ({ id, date, p }) => (
   <div className="flex flex-col items-center justify-evenly">
     <div className="min-h-full max-w-sm bg-white text-black text-sm rounded-xl shadow-md p-3.5 space-x-2 mb-0.5">
@@ -46,18 +42,16 @@ export default function Reviews() {
         <meta property="og:url" content={reviews.meta.url} />
       </Head>
 
-      <section>
-        <div className="text bg text-center pt-12 pb-4">
-          <h1 className="text-2xl font-semibold leading-normal tracking-wide mx-auto">{reviews.section.h1}</h1>
-          <h2 className="text-base font-light leading-loose">{reviews.section.h2}</h2>
-        </div>
+      <div className="text bg text-center pt-12 pb-4">
+        <h1 className="text-2xl font-semibold leading-normal tracking-wide mx-auto">{reviews.h1}</h1>
+        <h2 className="text-base font-light leading-loose">{reviews.h2}</h2>
+      </div>
 
-        <div className="flex flex-wrap place-content-center gap-5 pl-4 pr-4 pt-6 pb-8">
-          {reviews.section.div.map((props, reviews) => (
-            <Testimonial key={reviews} {...props} />
-          ))}
-        </div>
-      </section>
+      <div className="flex flex-wrap place-content-center gap-5 pl-4 pr-4 pt-6 pb-8">
+        {reviews.div.map((props, reviews) => (
+          <Testimonial key={reviews} {...props} />
+        ))}
+      </div>
     </>
   );
 }

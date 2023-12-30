@@ -17,21 +17,19 @@ export default function Calendar() {
         <meta property="og:url" content={calendar.meta.url} />
       </Head>
 
-      <section className="flex flex-col bg-white">
-        <div className="text min-h-screen p-10 bg">
-          <h1 className="md:text-center md:justify-center text-3xl text-gray-800 dark:text-gray-100 font-bold leading-relaxed tracking-wide mb-5">{calendar.section.h1}</h1>
-          <div className="flex md:items-center md:justify-center">
-            <div className="sm:grid grid-cols-2 gap-x-12 gap-y-4">
-              {calendar.section.div.map((props, index) => (
-                <div key={index} className="mb-2 justify-center whitespace-nowrap text-sm">
-                  <div className="text-slate-600 dark:text-gray-200 font-bold leading-loose tracking-wide w-1/2 sm:w-full">{props.date}</div>
-                  <div className="text-slate-500 dark:text-gray-400 w-1/2 sm:w-full">{props.description}</div>
-                </div>
-              ))}
-            </div>
+      <div className="flex flex-col bg-white text min-h-screen p-10 bg">
+        <h1 className="sm:text-center sm:justify-center sm:ml-0.5 ml-5 text-util-1 font-bold leading-relaxed tracking-wide my-5 pb-1.5">{calendar.h1}</h1>
+        <div className="flex sm:items-center sm:justify-center sm:pt-1.5">
+          <div className="sm:-ml-1 ml-5 sm:mb-2">
+            {calendar.div.map((props, index) => (
+              <div key={index} className="mb-2 whitespace-nowrap py-2">
+                <div className="text-util-2 font-bold leading-loose tracking-wide">{props.date}</div>
+                <div className="text-util-3">{props.description}</div>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }

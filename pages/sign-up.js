@@ -19,12 +19,12 @@ export default function SignUp() {
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={signUp.meta.url} />
-        <Script src={signUp.section.url} strategy="lazyOnload" />
+        <Script src={signUp.url} strategy="lazyOnload" />
       </Head>
 
-      <section className="min-h-screen px-6 py-6 md:py-0 justify-center items-center z-0">
-        <InlineWidget url={signUp.section.url} />
-      </section>
+      <div className="min-h-screen px-6 py-6 md:py-0 justify-center items-center z-0">
+        <InlineWidget url={signUp.url} />
+      </div>
     </>
   );
 }

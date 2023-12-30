@@ -122,7 +122,6 @@ export function Href({ span, href }) {
     <>{span[0]}<Link href={href} className={`ml-1 mr-1 href`}>{span[1]}</Link>{span[2]}</>
   );
 }
-
 export function Icon() {
   return (
     // fill-zinc-900 dark:fill-white stroke-zinc-900 dark:stroke-white
@@ -148,22 +147,22 @@ export default function Contact() {
         <meta property="og:url" content={contact.meta.url} />
       </Head>
 
-      <section className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">
+      <div className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">
         <div className="inline-flex md:w-1/2 md:h-3/6 md:pl-4">
           <div className="text text-center md:text-left md:w-5/6 h-fit md:h-1/2">
             <h1 className="text-2xl font-semibold pb-1.5 md:pb-3 pt-4 md:pt-0 inline-flex align-baseline ml-4 md:ml-0">
-              {contact.section.h1}<Icon />
+              {contact.h1}<Icon />
             </h1>
             <div className="px-8 md:px-0">
               <p className="md:max-w-sm min-w-full space-y-0 md:space-y-1.5 pb-8 leading-tight md:leading-normal">
-                <span className="items-center md:w-full text-sm font-light">{contact.section.div.p}</span>
-                <span className="whitespace-pre-line items-center w-full text-sm font-light"><Href span={contact.section.div.span} href={contact.section.div.href} /></span>
+                <span className="items-center md:w-full text-sm font-light">{contact.div.p}</span>
+                <span className="whitespace-pre-line items-center w-full text-sm font-light"><Href span={contact.div.span} href={contact.div.href} /></span>
               </p>
             </div>
           </div>
         </div>
         <Form />
-      </section>
+      </div>
     </>
   );
 }
