@@ -25,8 +25,7 @@ export default function About() {
   const handleScroll = (section) => {
     scroller.scrollTo(section, { duration: 800, offset: -100, smooth: "easeInOutQuart" });
   };
-  const background = ["bg-orange-50/50", "bg-blue-50/50", "bg-green-50/50"];
-
+  
   return (
     <>
       <Head>
@@ -44,7 +43,7 @@ export default function About() {
 
       <section className="flex flex-col bg-white">
         {about.section.map((props, index) => (
-          <Element key={props.anchor} id={props.anchor} className={`flex flex-col items-center w-full bg-slate-50 ${index % 2 != 1 ? `md:flex-row-reverse` : `md:flex-row`}`}>
+          <Element key={props.anchor} id={props.anchor} className={`flex flex-col items-center w-full bg-white ${index % 2 != 1 ? `md:flex-row-reverse` : `md:flex-row`}`}>
             <div className={`object-cover w-full ${index % 2 === 1 ? "md:w-1/2 md:order-2" : "md:w-1/2 md:order-1"}`}>
               <Img src={props.image} alt={props.alt} />
             </div>

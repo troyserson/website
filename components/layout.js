@@ -47,12 +47,12 @@ export function Navbar({ isDrawer, handleDrawer }) {
       <section className="flex flex-col justify-between items-center">
         <div className={`absolute md:hidden ${isDrawer ? 'block' : 'hidden'} flex flex-col items-center justify-center mx-auto`}>
           <Link href={layout.navbar.button.href} className="flex mt-8 mb-6 drop-shadow-sm hover:drop-shadow-md dark:drop-shadow-md dark:hover:drop-shadow-lg">
-            <button onClick={isDrawer ? handleDrawer : undefined} className="items-center justify-center text border-0 font-medium text-opacity-90 hover:text-opacity-100 dark:text-opacity-90 dark:hover:text-opacity-100 bg-opacity-90 hover:bg-opacity-95 dark:bg-opacity-90 dark:hover:bg-opacity-100 shadow-md hover:shadow-lg shadow-white/20 hover:shadow-white/30 dark:shadow-zinc-900/20 dark:hover:shadow-zinc-900/40 transition-all ease-in duration-300">
+            <button onClick={isDrawer ? handleDrawer : undefined} className="text-xl items-center justify-center text border-0 text-opacity-90 hover:text-opacity-100 dark:text-opacity-90 dark:hover:text-opacity-100 bg-opacity-90 hover:bg-opacity-95 dark:bg-opacity-90 dark:hover:bg-opacity-100 shadow-md hover:shadow-lg shadow-white/20 hover:shadow-white/30 dark:shadow-zinc-900/20 dark:hover:shadow-zinc-900/40 transition-all ease-in duration-300">
               <span className="relative rounded-md px-5 py-2.5 bg">{layout.navbar.button.span}</span>
             </button>
           </Link>
           {layout.navbar.div.map(({href, span}) => (
-            <Link key={span} href={href} onClick={handleDrawer} className="px-4 py-1 text-neutral-400 dark:text-neutral-500 bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">
+            <Link key={span} href={href} onClick={handleDrawer} className="text-lg px-4 py-1 text-neutral-400 dark:text-neutral-500 bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">
               {span}
             </Link>
           ))}
@@ -71,13 +71,12 @@ export function Footer() {
             <span className="tracking-tighter">&copy;</span>
             <span className="ml-0.5 tracking-tighter">2012</span>
             <span className="ml-1.5 first-letter:tracking-tight">{layout.name.span[0]}</span>
-            <span className="ml-1 first-letter:tracking-wider">{layout.name.span[1]}</span>
-            <span className="ml-1 first-letter:tracking-wider"> – All Rights Reserved</span>
+            <span className="ml-1 mr-0.5 first-letter:tracking-wider">{layout.name.span[1]}</span>
+            <span className="ml-0.5">–</span>
+            <span className="ml-1">All Rights Reserved</span>
           </div>
         </Link>
       </div>
-
-
     </section>
   );
 }

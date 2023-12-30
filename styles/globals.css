@@ -1,25 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-/* @import "tailwindcss/base";
+/*
+@import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities"; */
+@import "tailwindcss/utilities";
+*/
 
 @layer base {
-  html, body {
-    @apply
-      bg w-full h-full scroll-smooth
-      font-sans leading-relaxed text-inherit antialiased
-  }
-  /* 
-  h1 { @apply  }
-  h2 { @apply  }
-  h3 { @apply  }
-  
-  .p { @apply }
-  .p-lead { @apply }
-  .p-small { @apply }
-  */
+  html, body { @apply bg w-full h-full scroll-smooth font-sans leading-relaxed text-inherit antialiased }
 }
 
 @layer utilities {
@@ -27,20 +16,14 @@
   .text-invert { @apply text-white dark:text-zinc-900 }
   .bg { @apply bg-white dark:bg-zinc-900 }
   .bg-invert { @apply bg-zinc-900 dark:bg-white }
-
   .href { @apply hover:transition-all hover:ease-in duration-300 border-b hover:border-b-2 border-b-blue-300 dark:hover:border-b-blue-500 font-semibold }
   /*
   .bg { @apply bg-white dark:bg-zinc-900 }
-
   .text-primary { @apply calypso- dark:calypso- }
   .text-secondary { @apply calypso- dark:calypso- }
-
   .btn-text-primary { @apply calypso- }
   .btn-bg-primary { @apply calypso- }
   .btn-text-secondary { @apply calypso- }
   .btn-bg-secondary { @apply calypso- }
   */
 }
-
-.animate-gradient { background-size: 300%; -webkit-animation: animatedgradient 6s ease infinite alternate; -moz-animation: animatedgradient 6s ease infinite alternate; animation: animatedgradient 6s ease infinite alternate; }
-@keyframes animatedgradient { 0% { background-position: 0% 50% } 50% { background-position: 100% 50% } 100% { background-position: 0% 50% }}
