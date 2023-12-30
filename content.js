@@ -24,7 +24,7 @@ export const layout = {
     ],
     button: {
       href: `/sign-up`,
-      span: `Sign-Up`,
+      span: `Sign Up`,
     },
   },
   footer: {
@@ -120,13 +120,13 @@ export const about = {
   section: [
     { 
       anchor: `troy`, 
-      h1: `About Troy`,
-      h2: `Guitar & Ukulele Teacher Since 2011`,
+      h1: `Meet Your Teacher`,
+      h2: ` `,
       div: {
         p: `
-        Troy Serson, a seasoned musician and educator, specializes in personalized online guitar and ukulele lessons.
+        Troy Serson is a Guitar, Bass, and Ukulele teacher of 12 years who offers weekly online lessons from beginner to advanced. He has hundreds of 5 star reviews, and has taught children as young as 3 years old to play their favorite songs.
         
-        With over a decade of experience, he's helped countless students develop musical skills and gain confidence through his teaching.
+        Troy helps students all over the world learn musical instruments, nurturing learner confidence, and coaching students to discover their unique musical identity.
         `,
         span: [ ``, ``, `` ],
         href: `/sign-up`,
@@ -137,13 +137,17 @@ export const about = {
     { 
       anchor: `policy`,
       h1: `Studio Policy`,
-      h2: `Music Made Accessible & Enjoyable`,
+      h2: ` `,
       div: {
         p: `
-        Our studio's mission is to make music make sense. We offer multiple ways of understanding, ensuring each student finds what clicks best for them.
+        The mission for Troy’s studio is and has always been to Make Music Make Sense.
         
-        Our flexible and fair policies apply to every student.`,
-        span: [ ` For detailed information, check our studio `, `policy`, `.` ],
+        This means providing learners with multiple ways of understanding each concept and musical idea, in order to find the way that clicks best for them.
+        
+        This also means having flexible, but fair studio policies that apply to every student in the studio. Policies are updated from time to time, but remain mostly set in stone. 
+
+        `,
+        span: [ `Prospective students can view our up to date `, `studio policy`, ` here, and existing students will be notified of any changes by email.` ],
         href: `/policy`,
       },
       image: img[2].image,
@@ -152,13 +156,15 @@ export const about = {
     { 
       anchor: `lessons`,
       h1: `Online Lessons`,
-      h2: `Music Lessons Anywhere with Troy`,
+      h2: ` `,
       div: {
         p: `
-        In-person lessons are available for local students, but online classes are the preferred choice due to their quality and convenience.
+        Long gone are the days of driving across town to drop your kid off at a 30 minute music lesson, while you rush to the other side of town to pick up your other child from another activity, hopefully making it back in time by the end of the lesson so your kid isn’t awkwardly waiting while another family shows up for their music lesson.
 
+        Troy has established a reliable, professional, and effective online experience, allowing students to remain comfortably at home, enjoy the lesson without having to rush from place to place, all while achieving better results than they would at a traditional in person music studio.
+        
         `,
-        span: [ `For more info on lessons, visit our `, `contact`, ` page or schedule a free trial.` ],
+        span: [ `For more information about lessons, please use the `, `contact`, ` page, or sign up for a complimentary lesson to see if Music Lessons with Troy is right for your learner.` ],
         href: `/contact`,
       },
       image: img[3].image,

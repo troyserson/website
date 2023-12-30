@@ -53,7 +53,8 @@ export default function Index() {
           
           <div className="absolute inset-10 -ml-1 md:pl-8 lg:pl-10">
             <div className="inset-0 h-1/2 md:w-3/4 mt-8 md:pt-10 lg:pt-32 justify-between">
-              <h1 className="flex flex-col lg:flex-row leading-tight lg:leading-normal text-6xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient">
+              {/* <h1 className="flex flex-col lg:flex-row leading-tight lg:leading-normal text-6xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 bg-300% animate-gradient"> */}
+              <h1 className="flex flex-col lg:flex-row leading-tight lg:leading-normal text-6xl transition-all ease-in font-bold text-transparent bg-clip-text bg-gradient-to-r text-white">
                 <span>{index.section[0].h1.span[0]} </span>
                 <span>{index.section[0].h1.span[1]} </span>
                 <span>{index.section[0].h1.span[2]} </span>

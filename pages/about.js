@@ -44,15 +44,15 @@ export default function About() {
 
       <section className="flex flex-col bg-white">
         {about.section.map((props, index) => (
-          <Element key={props.anchor} id={props.anchor} className={`flex flex-col items-center w-full ${background[index]} ${index % 2 != 1 ? `md:flex-row-reverse` : `md:flex-row`}`}>
+          <Element key={props.anchor} id={props.anchor} className={`flex flex-col items-center w-full bg-slate-50 ${index % 2 != 1 ? `md:flex-row-reverse` : `md:flex-row`}`}>
             <div className={`object-cover w-full ${index % 2 === 1 ? "md:w-1/2 md:order-2" : "md:w-1/2 md:order-1"}`}>
               <Img src={props.image} alt={props.alt} />
             </div>
             <div className={`flex flex-col whitespace-pre-line md:w-1/2 p-8 lg:pt-12`}>
               <div className="mx-1.5">
-                <h1><Link href={`/about#${props.anchor}`} onClick={() => handleScroll(props.anchor)} className="text-gray-500 uppercase tracking-wide text-xs font-semibold bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">{props.h1}</Link></h1>
-                <h2 className="block text-zinc-900 text-sm leading-tight font-medium mt-1.5">{props.h2}</h2>
-                <p className="text-slate-500 text-sm mb-2.5">{props.div.p}<Href span={props.div.span} href={props.div.href} /></p>
+                <h1><Link href={`/about#${props.anchor}`} onClick={() => handleScroll(props.anchor)} className="text-black tracking-wide text-xl font-semibold bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">{props.h1}</Link></h1>
+                <h2 className="block text-zinc-900 text-xl leading-tight font-medium mt-1.5">{props.h2}</h2>
+                <p className="text-slate-500 text-xl mb-2.5">{props.div.p}<Href span={props.div.span} href={props.div.href} /></p>
               </div>
             </div>
           </Element>
