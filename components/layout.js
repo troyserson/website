@@ -15,14 +15,14 @@ export function Navbar({ isDrawer, handleDrawer }) {
   return (
     <div className={`text-invert bg-invert sticky top-0 z-10 px-4 py-4 ${isDrawer ? 'h-screen' : ''}`}>
       <section className="flex flex-row justify-between items-center">
-        <Link href="/" onClick={isDrawer ? handleDrawer : undefined} className="flex items-center text-lg font-rubik tracking-normal lg:hover:opacity-90 transition-opacity ease-in duration-300 dark:text-zinc-950">
+        <Link href="/" onClick={isDrawer ? handleDrawer : undefined} className="flex items-center text-lg font-rubik tracking-normal sm:hover:opacity-90 hover:opacity-100 transition-opacity ease-in duration-300 dark:text-zinc-950">
           <Icon />
           <span className="ml-0.5 block first-letter:text-xl first-letter:font-medium first-letter:tracking-tight first-letter:dark:text-zinc-900">{layout.name.span[0]}</span>
           <span className="ml-1 block first-letter:text-xl first-letter:font-medium first-letter:tracking-wider first-letter:dark:text-zinc-900">{layout.name.span[1]}</span>
         </Link>
         <>
           <div className={`md:hidden inline-flex mr-2 ${isDrawer ? 'pt-0.5' : 'pb-0.5'}`}>
-            <button onClick={handleDrawer} className={`text-invert ${isDrawer ? 'opacity-30 hover:opacity-50' : ''} opacity-90 hover:opacity-70 ease-linear transition duration-300 py-0.5`} aria-label="Toggle">
+            <button onClick={handleDrawer} className={`text-invert ${isDrawer ? 'sm:opacity-30 sm:hover:opacity-50 opacity-100 hover:opacity-100' : ''} sm:opacity-90 sm:hover:opacity-70 opacity-100 hover:opacity-100 ease-linear transition duration-300 py-0.5`} aria-label="Toggle">
               <svg className="w-8 h-8" strokeWidth="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d={isDrawer ? 'M6 18L18 6M6 6l12 12' : 'M3.75 9h16.5m-16.5 7.75h16.5'} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -31,7 +31,7 @@ export function Navbar({ isDrawer, handleDrawer }) {
 
           <div className="md:flex hidden items-center">
             {layout.navbar.div.map(({href, span}) => (
-              <Link key={span} href={href} onClick={isDrawer ? handleDrawer : undefined} className="px-4 text-neutral-400 dark:text-neutral-500 bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">
+              <Link key={span} href={href} onClick={isDrawer ? handleDrawer : undefined} className="px-4 text-neutral-400 dark:text-neutral-500 bg-transparent sm:hover:bg-transparent sm:hover:opacity-80 hover:bg-transparent hover:opacity-100 transition-opacity duration-300">  
                 {span}
               </Link>
             ))}
@@ -52,7 +52,7 @@ export function Navbar({ isDrawer, handleDrawer }) {
             </button>
           </Link>
           {layout.navbar.div.map(({href, span}) => (
-            <Link key={span} href={href} onClick={handleDrawer} className="text-lg px-4 py-1 text-neutral-400 dark:text-neutral-500 bg-transparent lg:hover:bg-transparent lg:hover:opacity-80 transition-opacity duration-300">
+            <Link key={span} href={href} onClick={handleDrawer} className="text-lg px-4 py-1 text-neutral-400 dark:text-neutral-500 bg-transparent sm:hover:bg-transparent sm:hover:opacity-80 hover:bg-transparent hover:opacity-100 transition-opacity duration-300">  
               {span}
             </Link>
           ))}
@@ -64,20 +64,21 @@ export function Navbar({ isDrawer, handleDrawer }) {
 
 export function Footer() {
   return (
-    <section className="relative bottom-0 w-full flex bg-invert text-invert justify-between px-4 py-5">
-      <div className="flex items-center ml-6">
-        <Link href="/" className="text-neutral-400 dark:text-neutral-500 text-opacity-75">
-          <div className="inline-flex text-xs">
-            <span className="tracking-tighter">&copy;</span>
-            <span className="ml-0.5 tracking-tighter">2012</span>
-            <span className="ml-1.5 first-letter:tracking-tight">{layout.name.span[0]}</span>
-            <span className="ml-1 mr-0.5 first-letter:tracking-wider">{layout.name.span[1]}</span>
-            <span className="ml-0.5">–</span>
-            <span className="ml-1">All Rights Reserved</span>
+    <div className="relative bottom-0 flex bg-invert text-invert justify-center p-5">
+      <div className="flex">
+        <Link href="/" className="text-center text-neutral-400 dark:text-neutral-500 text-opacity-75">
+          <div className="align-baseline text-xs">
+            <span className="tracking-tighter mr-0.5">&copy;</span>
+            <span className="tracking-tighter">2012</span>
+            <span className="">-</span>
+            <span className="tracking-tighter">{new Date().getFullYear()}</span>
+            <span className="ml-1 first-letter:tracking-tight">{layout.name.span[0]}</span>
+            <span className="ml-0.5 first-letter:tracking-wider">{layout.name.span[1]}.</span>
+            <span className="ml-0.5">All Rights Reserved.</span>
           </div>
         </Link>
       </div>
-    </section>
+    </div>
   );
 }
 

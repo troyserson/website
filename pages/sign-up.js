@@ -22,7 +22,8 @@ export default function SignUp() {
         <Script src={signUp.url} strategy="lazyOnload" />
       </Head>
 
-      <div className="min-h-screen px-6 py-6 md:py-0 justify-center items-center z-0">
+      {/* <div className="min-h-screen px-6 py-6 md:py-0 justify-center items-center z-0"> */}
+      <div className="bg-white min-h-screen px-6 py-6 justify-center items-center z-0">
         <InlineWidget url={signUp.url} />
       </div>
     </>
