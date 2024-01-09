@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+
+import photo from "../public/troy-serson.png";
 import { about } from "../content.js";
+
 import dynamic from "next/dynamic";
 const Element = dynamic(() => import("react-scroll").then((mod) => mod.Element), { ssr: false });
 
@@ -22,7 +25,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>{about.meta.title}</title>
+        {/* <title>{about.meta.title}</title>
         <meta name="title" content={about.meta.title} />
         <meta name="description" content={about.meta.description} key="desc" />
         <meta property="og:image" content={about.meta.image} />
@@ -31,7 +34,17 @@ export default function About() {
         <meta property="og:description" content={about.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={about.meta.url} />
+        <meta property="og:url" content={about.meta.url} /> */}
+        <title>About | Troy Serson</title>
+        <meta name="title" content="About | Troy Serson" />
+        <meta name="description" content="About Troy Serson, the studio policy, and online lessons" />
+        <meta property="og:image" content={photo} />
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="About | Troy Serson" />
+        <meta property="og:description" content="About Troy Serson, the studio policy, and online lessons" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="troyserson.com/about" />
       </Head>
 
       <section className="flex flex-col bg-white">

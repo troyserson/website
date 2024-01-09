@@ -2,13 +2,14 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
+import photo from "../public/troy-serson.png";
 import { index } from "../content.js";
 
 export default function Index() {
   return (
     <>
       <Head>
-        <title>{index.meta.title}</title>
+        {/* <title>{index.meta.title}</title>
         <meta name="title" content={index.meta.title} />
         <meta name="description" content={index.meta.description} />
         <meta property="og:image" content={index.meta.image} />
@@ -17,7 +18,17 @@ export default function Index() {
         <meta property="og:description" content={index.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={index.meta.url} />
+        <meta property="og:url" content={index.meta.url} /> */}
+        <title>Home | Troy Serson</title>
+        <meta name="title" content="Home | Troy Serson" />
+        <meta name="description" content="Learn more about lessons online or sign-up today!" />
+        <meta property="og:image" content={photo} />
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="Home | Troy Serson" />
+        <meta property="og:description" content="Learn more about lessons online or sign-up today!" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="www.troyserson.com" />
       </Head>
       
       <div className="h-screen w-full relative">
