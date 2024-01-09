@@ -47,16 +47,28 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="troyserson.com/about" /> */}
 
-        <title>About | Troy Serson</title>
+        {/* <title>About | Troy Serson</title>
         <meta name="title" content="About | Troy Serson" />
         <meta name="description" content="About Troy Serson, the studio policy, and online lessons" />
-        {/* <meta property="og:image" content={photo} /> */}
+        // <meta property="og:image" content={photo} />
         <meta property="og:image:alt" content="Photo of Troy Serson" />
         <meta property="og:title" content="About | Troy Serson" />
         <meta property="og:description" content="About Troy Serson, the studio policy, and online lessons" />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com/about" />
+        <meta property="og:url" content="https://www.troyserson.com/about" /> */}
+
+        <link rel="canonical" href="https://www.troyserson.com/about" key="canonical" />
+        <title>About | Troy Serson</title>
+        <meta name="title" content="About | Troy Serson" />
+        <meta name="description" content="About Troy Serson, the studio policy, and online lessons" />
+
+        {/* <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="About | Troy Serson" />
+        <meta property="og:description" content="About Troy Serson, the studio policy, and online lessons" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.troyserson.com/about" /> */}
       </Head>
 
       <section className="flex flex-col bg-white">
