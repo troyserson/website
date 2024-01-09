@@ -42,6 +42,7 @@ export default function Index() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.troyserson.com" /> */}
 
+        <meta name="google-site-verification" content="4xylgkMlLoZMaQb9PuUhhXaqq6dwcIvY20Gs1wExg_s" />
         <link rel="canonical" href="https://www.troyserson.com" key="canonical" />
         <title>Home | Troy Serson</title>
         <meta name="title" content="Home | Troy Serson" />
