@@ -20,10 +20,23 @@ export default function SignUp() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={signUp.meta.url} />
         <Script src={signUp.url} strategy="lazyOnload" /> */}
+
+        {/* <title>Sign Up | Troy Serson</title>
+        <meta name="title" content="Sign Up | Troy Serson" />
+        <meta name="description" content="Information regarding studio hours and availability" />
+        // <meta property="og:image" content="../public/troy-serson.png" />
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="Sign Up | Troy Serson" />
+        <meta property="og:description" content="Information regarding studio hours and availability" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.troyserson.com/sign-up" />
+        <Script src={signUp.url} strategy="lazyOnload" /> */}
+
         <title>Sign Up | Troy Serson</title>
         <meta name="title" content="Sign Up | Troy Serson" />
         <meta name="description" content="Information regarding studio hours and availability" />
-        {/* <meta property="og:image" content="../public/troy-serson.png" /> */}
+        <meta property="og:image" content="https://www.troyserson.com/logo.svg" />
         <meta property="og:image:alt" content="Photo of Troy Serson" />
         <meta property="og:title" content="Sign Up | Troy Serson" />
         <meta property="og:description" content="Information regarding studio hours and availability" />

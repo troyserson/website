@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-import photo from "../public/troy-serson.png";
+// import photo from "../public/troy-serson.png";
 import { about } from "../content.js";
 
 import dynamic from "next/dynamic";
@@ -35,7 +35,8 @@ export default function About() {
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={about.meta.url} /> */}
-        <title>About | Troy Serson</title>
+
+        {/* <title>About | Troy Serson</title>
         <meta name="title" content="About | Troy Serson" />
         <meta name="description" content="About Troy Serson, the studio policy, and online lessons" />
         <meta property="og:image" content={photo} />
@@ -44,7 +45,18 @@ export default function About() {
         <meta property="og:description" content="About Troy Serson, the studio policy, and online lessons" />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="troyserson.com/about" />
+        <meta property="og:url" content="troyserson.com/about" /> */}
+
+        <title>About | Troy Serson</title>
+        <meta name="title" content="About | Troy Serson" />
+        <meta name="description" content="About Troy Serson, the studio policy, and online lessons" />
+        {/* <meta property="og:image" content={photo} /> */}
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="About | Troy Serson" />
+        <meta property="og:description" content="About Troy Serson, the studio policy, and online lessons" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.troyserson.com/about" />
       </Head>
 
       <section className="flex flex-col bg-white">

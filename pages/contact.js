@@ -150,7 +150,8 @@ export default function Contact() {
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={contact.meta.url} /> */}
-        <title>Contact | Troy Serson</title>
+
+        {/* <title>Contact | Troy Serson</title>
         <meta name="title" content="Contact | Troy Serson" />
         <meta name="description" content="Get in touch through our email form!" />
         <meta property="og:image" content="../public/troy-serson.png" />
@@ -159,7 +160,18 @@ export default function Contact() {
         <meta property="og:description" content="Get in touch through our email form!" />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com/contact/" />
+        <meta property="og:url" content="https://www.troyserson.com/contact/" /> */}
+
+        <title>Contact | Troy Serson</title>
+        <meta name="title" content="Contact | Troy Serson" />
+        <meta name="description" content="Get in touch through our email form!" />
+        <meta property="og:image" content="https://www.troyserson.com/troy-serson.png" />
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="Contact | Troy Serson" />
+        <meta property="og:description" content="Get in touch through our email form!" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.troyserson.com/contact" />
       </Head>
 
       <div className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">
