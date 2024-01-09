@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
+
 import { contact } from "../content.js";
 
 export function Form() {
@@ -139,7 +140,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>{contact.meta.title}</title>
+        {/* <title>{contact.meta.title}</title>
         <meta name="title" content={contact.meta.title} />
         <meta name="description" content={contact.meta.description} key="desc" />
         <meta property="og:image" content={contact.meta.image} />
@@ -148,7 +149,17 @@ export default function Contact() {
         <meta property="og:description" content={contact.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={contact.meta.url} />
+        <meta property="og:url" content={contact.meta.url} /> */}
+        <title>Contact | Troy Serson</title>
+        <meta name="title" content="Contact | Troy Serson" />
+        <meta name="description" content="Get in touch through our email form!" />
+        <meta property="og:image" content="../public/troy-serson.png" />
+        <meta property="og:image:alt" content="Photo of Troy Serson" />
+        <meta property="og:title" content="Contact | Troy Serson" />
+        <meta property="og:description" content="Get in touch through our email form!" />
+        <meta property="og:site_name" content="Troy Serson" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.troyserson.com/contact/" />
       </Head>
 
       <div className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">
