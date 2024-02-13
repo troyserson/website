@@ -23,6 +23,16 @@
   .text-util-3 { @apply text-slate-500 dark:text-gray-400 sm:text-base text-sm leading-relaxed }
 
   /*
+  .style-1 { @apply text-gray-800 dark:text-slate-50 }
+  .style-2 { @apply text-slate-600 dark:text-gray-200 }
+  .style-3 { @apply text-slate-500 dark:text-gray-400 }
+
+  .size-1 { @apply sm:text-xl text-lg }
+  .size-2 { @apply sm:text-lg text-base tracking-wide }
+  .size-3 { @apply sm:text-base text-sm leading-relaxed }
+  */
+
+  /*
   .bg { @apply bg-white dark:bg-zinc-900 }
   .text-primary { @apply calypso- dark:calypso- }
   .text-secondary { @apply calypso- dark:calypso- }

@@ -31,17 +31,21 @@ export const layout = {
 
 /** @note /index */
 export const index = {
+  link: `https://www.troyserson.com`,
+  title: `Home | Troy Serson`,
+  description: `Discover why kids who switch to online music lessons report learning more AND having more fun (even if they say they hate online lessons). Try out guitar, bass, or ukulele risk free by...`,
   meta: {
+    description: `Save time, have more fun, and discover the joy of music. Try 1 on 1 guitar, bass, or ukulele lessons risk free...`,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Home | Troy Serson`,
-    description: `Learn more about lessons online or sign-up today!`,
-    url: `https://troyserson.com`,
   },
   image: img[0].image,
   alt: img[0].alt,
   h1: {
-    span: [ `Learn to Play Guitar`, `(Without Leaving Your House)` ],
+    span: [ 
+      `Learn to Play Guitar`, 
+      `(Without Leaving Your House)` 
+    ]
   },
   h2: `Discover why tomorrow's brightest are taking music lessons online`,
   button: { href: `/sign-up`, span: `Free Trial`},
@@ -49,12 +53,13 @@ export const index = {
 
 /** @note /about */
 export const about = {
+  link: `https://www.troyserson.com/about`,
+  title: `About | Troy Serson`,
+  description: `Troy creates a nurturing environment in lessons where kids can explore the music they love, and learn an instrument along the way (even if they’re brand new to music). With 12 years of...`,
   meta: {
+    description: `Explore the music you love, and learn an instrument along the way! Try 1 on 1 guitar, bass, or ukulele lessons risk free...`,
     image: img[1].image,
     alt: img[1].alt,
-    title: `About | Troy Serson`,
-    description: `About Troy Serson, the studio policy, and online lessons`,
-    url: `https://troyserson.com/about`,
   },
   section: [
     { 
@@ -82,7 +87,7 @@ export const about = {
         This also means having flexible, but fair studio policies that apply to every student in the studio. Policies are updated from time to time, but remain mostly set in stone. 
 
         `,
-        span: [ `Prospective students can view our up to date `, `studio policy`, ` here, and existing students will be notified of any changes by email.` ],
+        span: [ `Prospective students can view our up to date studio `, `policy`, ` here, and existing students will be notified of any changes by email.` ],
         href: `/policy`,
       },
       image: img[2].image,
@@ -108,12 +113,13 @@ export const about = {
 
 /** @note /policy */
 export const policy = {
+  link: `https://www.troyserson.com/policy`,
+  title: `Policy | Troy Serson`,
+  description: ``,
   meta: {
+    description: ``,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Policy | Troy Serson`,
-    description: `Studio policy`,
-    url: `https://troyserson.com/policy`,
   },
   h1: `Studio Policy`,
   p: [
@@ -204,12 +210,13 @@ export const policy = {
 
 /** @note /calendar */
 export const calendar = {
+  link: `https://www.troyserson.com/calendar`,
+  title: `Calendar | Troy Serson`,
+  description: `See up to date information for the calendar year on parent teacher interviews, student recitals, and studio closures for holidays. See you in class!`,
   meta: {
+    description: `Find out about parent teacher interviews, student recitals, and studio closures for holidays. Try 1 on 1 guitar, bass, or ukulele lessons risk free...`,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Calendar | Troy Serson`,
-    description: `Important dates`,
-    url: `https://troyserson.com/calendar`,
   },
   h1: `Important Dates`,
   div: [
@@ -228,12 +235,13 @@ export const calendar = {
 
 /** @note /reviews */
 export const reviews = {
+  link: `https://www.troyserson.com/reviews`,
+  title: `Reviews | Troy Serson`,
+  description: `See what other parents and students have to say about online lessons with Troy...`,
   meta: {
+    description: `Find out what current and former students and parents say about 1 on 1 guitar, bass, and ukulele lessons with Troy`,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Reviews | Troy Serson`,
-    description: ``,
-    url: `https://troyserson.com/reviews`,
   },
   h1: `Want to know more?`,
   h2: `Check out these nice things people are saying`,
@@ -285,12 +293,13 @@ export const reviews = {
 
 /** @note /contact */
 export const contact = {
+  link: `https://www.troyserson.com/contact`,
+  title: `Contact | Troy Serson`,
+  description: `Contact Troy today to find out if lessons are right for you or your child. Studio hours are Tuesday to Friday 9am - 7pm PST. We will get back to you within 24 business hours. Thank you!`,
   meta: {
+    description: `Contact Troy today to find out if lessons are right for you or your child. Studio hours are...`,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Contact | Troy Serson`,
-    description: `Get in touch through our email form!`,
-    url: `https://troyserson.com/contact`,
   },
   h1: `Get in touch`,
   div: {
@@ -303,12 +312,13 @@ export const contact = {
 
 /** @note /sign-up */
 export const signUp = {
+  link: `https://www.troyserson.com/sign-up`,
+  title: `Sign Up | Troy Serson`,
+  description: ``,
   meta: {
+    description: ``,
     image: img[1].image,
     alt: img[1].alt,
-    title: `Sign Up | Troy Serson`,
-    description: `Information regarding studio hours and availability`,
-    url: `https://troyserson.com/sign-up`,
   },
   url: `https://calendly.com/lessons-with-troy/new-student-promo`,
 };

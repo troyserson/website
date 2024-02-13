@@ -1,20 +1,22 @@
 import Head from "next/head";
+
 import { calendar } from "../content.js";
 
 export default function Calendar() {  
   return (
     <>
       <Head>
-        <title>{calendar.meta.title}</title>
-        <meta name="title" content={calendar.meta.title} />
-        <meta name="description" content={calendar.meta.description} key="desc" />
+        <link rel="canonical" href={calendar.link} key="canonical" />
+        <title>{calendar.title}</title>
+        <meta name="title" content={calendar.title} />
+        <meta name="description" content={calendar.description} key="desc" />
         <meta property="og:image" content={calendar.meta.image} />
         <meta property="og:image:alt" content={calendar.meta.alt} />
-        <meta property="og:title" content={calendar.meta.title} />
+        <meta property="og:title" content={calendar.title} />
         <meta property="og:description" content={calendar.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={calendar.meta.url} />
+        <meta property="og:url" content={calendar.link} />
       </Head>
 
       <div className="flex flex-col bg-white text min-h-screen p-10 bg">

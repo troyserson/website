@@ -125,11 +125,7 @@ export function Href({ span, href }) {
 }
 export function Icon() {
   return (
-    // fill-zinc-900 dark:fill-white stroke-zinc-900 dark:stroke-white
-    // <svg className="ml-1.5 w-10 h-10 fill-zinc-900 dark:fill-white" viewBox="0 0 20 24" xmlns="http://www.w3.org/2000/svg">
-    //   <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
-    // </svg>
-    <svg className="w-10 h-10 stroke-zinc-900 dark:stroke-white fill-zinc-900 dark:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.57 373.9">
+    <svg className="w-10 h-10 stroke-zinc-900 dark:stroke-white fill-zinc-900 dark:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <path fill="none" strokeLinecap="round" strokeLinejoin="round"  strokeMiterlimit="10" strokeWidth="11.8" d="M31.02 314.6c.76-2.79-.91-6.66-2.51-9.45a25.91 25.91 0 0 0-1.61-2.41 127 127 0 0 1-21-69.93c-.2-71.36 59-129.27 132.12-129.27 4.87 0 74.53-10.64 86.78-3.27 23.07 13.87 1.54 45.78 23.54 66.4 14.19 13.33 17.68 32.33 19.23 39.76a125.94 125.94 0 0 1 2.81 26.47c0 71.46-56.89 130.28-130.06 130.28-11.64 0-27.34-2.92-35.9-5.32s-17.11-5.58-19.32-6.43a19.92 19.92 0 0 0-7.08-1.31 19.52 19.52 0 0 0-7.69 1.54l-43.1 15.56a10.06 10.06 0 0 1-3 .78 6.1 6.1 0 0 1-6.08-6.12h0v-.07a9.86 9.86 0 0 1 .38-2.09Z"/>
       <path d="M77.93 105a128.45 128.45 0 0 0-2.91 27.08 132.44 132.44 0 0 0 131.88 133h.88c12.64 0 28.83-3.25 36.59-5.42 9.33-2.59 18.18-6 19.2-6.38a8.6 8.6 0 0 1 3.25-.6 9.92 9.92 0 0 1 3.49.66l.54.18 40.62 14.68a17.18 17.18 0 0 0 6.32 1.39 15.48 15.48 0 0 0 15.41-15.47 19.1 19.1 0 0 0-.72-4.57l-11.26-40.14a5.21 5.21 0 0 1 .73-4.15l.12-.24c.06-.06.24-.37.42-.61l.54-.72.12-.18a130.29 130.29 0 0 0-16.77-163.73A135 135 0 0 0 210.02 0a137.34 137.34 0 0 0-85.58 30 132 132 0 0 0-46.51 75Zm170.43 29.8a19.26 19.26 0 1 1 19.26 19.26 19.23 19.23 0 0 1-19.26-19.2Zm-57.77 0a19.26 19.26 0 1 1 19.26 19.26 19.23 19.23 0 0 1-19.26-19.2Zm-57.77 0a19.26 19.26 0 1 1 19.26 19.26 19.23 19.23 0 0 1-19.26-19.2Z"/>
     </svg>
@@ -140,38 +136,17 @@ export default function Contact() {
   return (
     <>
       <Head>
-        {/* <title>{contact.meta.title}</title>
-        <meta name="title" content={contact.meta.title} />
-        <meta name="description" content={contact.meta.description} key="desc" />
+      <link rel="canonical" href={contact.link} key="canonical" />
+        <title>{contact.title}</title>
+        <meta name="title" content={contact.title} />
+        <meta name="description" content={contact.description} key="desc" />
         <meta property="og:image" content={contact.meta.image} />
         <meta property="og:image:alt" content={contact.meta.alt} />
-        <meta property="og:title" content={contact.meta.title} />
+        <meta property="og:title" content={contact.title} />
         <meta property="og:description" content={contact.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={contact.meta.url} /> */}
-
-        {/* <title>Contact | Troy Serson</title>
-        <meta name="title" content="Contact | Troy Serson" />
-        <meta name="description" content="Get in touch through our email form!" />
-        <meta property="og:image" content="../public/troy-serson.png" />
-        <meta property="og:image:alt" content="Photo of Troy Serson" />
-        <meta property="og:title" content="Contact | Troy Serson" />
-        <meta property="og:description" content="Get in touch through our email form!" />
-        <meta property="og:site_name" content="Troy Serson" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com/contact/" /> */}
-
-        <title>Contact | Troy Serson</title>
-        <meta name="title" content="Contact | Troy Serson" />
-        <meta name="description" content="Get in touch through our email form!" />
-        <meta property="og:image" content="https://www.troyserson.com/troy-serson.png" />
-        <meta property="og:image:alt" content="Photo of Troy Serson" />
-        <meta property="og:title" content="Contact | Troy Serson" />
-        <meta property="og:description" content="Get in touch through our email form!" />
-        <meta property="og:site_name" content="Troy Serson" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com/contact" />
+        <meta property="og:url" content={contact.link} />
       </Head>
 
       <div className="flex flex-col md:flex-row items-center justify-center h-screen p-4 overflow-y-auto">

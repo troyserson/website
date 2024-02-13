@@ -9,6 +9,7 @@ export function Star() {
     </svg>
   );
 }
+
 export function Rating() {
   return (
     <div className="flex flex-row mr-1 p-0.5 space-x-1">
@@ -16,6 +17,7 @@ export function Rating() {
     </div>
   );
 }
+
 export const Testimonial = ({ id, date, p }) => (
   <div className="flex flex-col items-center justify-evenly">
     <div className="min-h-full max-w-sm bg-white text-black text-sm rounded-xl shadow-md p-3.5 space-x-2 mb-0.5">
@@ -30,16 +32,17 @@ export default function Reviews() {
   return (
     <>
       <Head>
-        <title>{reviews.meta.title}</title>
-        <meta name="title" content={reviews.meta.title} />
-        <meta name="description" content={reviews.meta.description} />
+        <link rel="canonical" href={reviews.link} key="canonical" />
+        <title>{reviews.title}</title>
+        <meta name="title" content={reviews.title} />
+        <meta name="description" content={reviews.description} key="desc" />
         <meta property="og:image" content={reviews.meta.image} />
         <meta property="og:image:alt" content={reviews.meta.alt} />
-        <meta property="og:title" content={reviews.meta.title} />
+        <meta property="og:title" content={reviews.title} />
         <meta property="og:description" content={reviews.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={reviews.meta.url} />
+        <meta property="og:url" content={reviews.link} />
       </Head>
 
       <div className="text bg text-center pt-12 pb-4">

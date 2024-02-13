@@ -2,64 +2,31 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
-// import photo from "../public/troy-serson.png";
 import { index } from "../content.js";
 
 export default function Index() {
   return (
     <>
       <Head>
-        {/* <title>{index.meta.title}</title>
-        <meta name="title" content={index.meta.title} />
-        <meta name="description" content={index.meta.description} />
+        <meta name="google-site-verification" content="4xylgkMlLoZMaQb9PuUhhXaqq6dwcIvY20Gs1wExg_s" />
+
+        <link rel="canonical" href={index.link} key="canonical" />
+        <title>{index.title}</title>
+        <meta name="title" content={index.title} />
+        <meta name="description" content={index.description} key="desc" />
         <meta property="og:image" content={index.meta.image} />
         <meta property="og:image:alt" content={index.meta.alt} />
-        <meta property="og:title" content={index.meta.title} />
+        <meta property="og:title" content={index.title} />
         <meta property="og:description" content={index.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={index.meta.url} /> */}
-        
-        {/* <title>Home | Troy Serson</title>
-        <meta name="title" content="Home | Troy Serson" />
-        <meta name="description" content="Learn more about lessons online or sign-up today!" />
-        <meta property="og:image" content={photo} />
-        <meta property="og:image:alt" content="Photo of Troy Serson" />
-        <meta property="og:title" content="Home | Troy Serson" />
-        <meta property="og:description" content="Learn more about lessons online or sign-up today!" />
-        <meta property="og:site_name" content="Troy Serson" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="www.troyserson.com" /> */}
-
-        {/* <title>Home | Troy Serson</title>
-        <meta name="title" content="Home | Troy Serson" />
-        <meta name="description" content="Learn more about lessons online or sign-up today!" />
-        // <meta property="og:image" content={photo} />
-        <meta property="og:image:alt" content="Photo of Troy Serson" />
-        <meta property="og:title" content="Home | Troy Serson" />
-        <meta property="og:description" content="Learn more about lessons online or sign-up today!" />
-        <meta property="og:site_name" content="Troy Serson" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com" /> */}
-
-        <meta name="google-site-verification" content="4xylgkMlLoZMaQb9PuUhhXaqq6dwcIvY20Gs1wExg_s" />
-        <link rel="canonical" href="https://www.troyserson.com" key="canonical" />
-        <title>Home | Troy Serson</title>
-        <meta name="title" content="Home | Troy Serson" />
-        <meta name="description" content="Learn more about lessons online or sign-up today!" />
-        
-        {/* <meta property="og:image" content="https://www.troyserson.com/troy-serson.png" />
-        <meta property="og:image:alt" content="Photo of Troy Serson" />
-        <meta property="og:title" content="Home | Troy Serson" />
-        <meta property="og:description" content="Learn more about lessons online or sign-up today!" />
-        <meta property="og:site_name" content="Troy Serson" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.troyserson.com" /> */}
+        <meta property="og:url" content={index.link} />
       </Head>
       
       <div className="h-screen w-full relative">
-        <Image className="absolute inset-0 bg-transparent h-full w-full object-cover object-center" src={index.image} alt={index.alt} priority />
+        <Image className="absolute inset-0 bg-transparent h-full w-full object-cover object-center" src={index.image} alt={index.alt} priority={true} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/60 opacity-70" />
+        
         <div className="absolute inset-10 sm:pl-6 md:pl-8 lg:pl-10">
           <div className="inset-0 sm:mt-6 md:mt-6 lg:mt-8 justify-between">
             <h1 className="flex flex-col leading-tight text-transparent bg-clip-text whitespace-break-spaces">
