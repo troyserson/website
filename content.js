@@ -115,9 +115,9 @@ export const about = {
 export const policy = {
   link: `https://www.troyserson.com/policy`,
   title: `Policy | Troy Serson`,
-  description: ``,
+  description: `Troy will teach students the language of music in a positive and enthusiastic environment. It is his goal to inspire each student, and empower them to influence their music education with...`,
   meta: {
-    description: ``,
+    description: `Studio policy`,
     image: img[1].image,
     alt: img[1].alt,
   },
@@ -314,9 +314,9 @@ export const contact = {
 export const signUp = {
   link: `https://www.troyserson.com/sign-up`,
   title: `Sign Up | Troy Serson`,
-  description: ``,
+  description: `Schedule your 1-on-1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
   meta: {
-    description: ``,
+    description: `Schedule your 1-on-1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
     image: img[1].image,
     alt: img[1].alt,
   },

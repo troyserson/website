@@ -12,11 +12,11 @@ export default function Policy() {
         <link rel="canonical" href={policy.link} key="canonical" />
         <title>{policy.title}</title>
         <meta name="title" content={policy.title} />
-        {/* <meta name="description" content={policy.description} key="desc" /> */}
+        <meta name="description" content={policy.description} key="desc" />
         <meta property="og:image" content={policy.meta.image} />
         <meta property="og:image:alt" content={policy.meta.alt} />
         <meta property="og:title" content={policy.title} />
-        {/* <meta property="og:description" content={policy.meta.description} /> */}
+        <meta property="og:description" content={policy.meta.description} />
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={policy.link} />

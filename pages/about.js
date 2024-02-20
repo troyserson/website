@@ -92,10 +92,11 @@ export default function About() {
           <div className="flex items-center w-full bg">
             
             <div className={`md:flex items-center md:items-start
-              ${index % 2 === 0 ? `md:flex-row-reverse sm:mr-0 md:mr-8` : `md:flex-row sm:ml-0 md:ml-8`} 
-              ${index = 2 ? `lg:mb-10 md:mb-0 sm:mb-0` : `mb-0`}
-              ${index = 1 ? `lg:mt-0 md:mt-6 sm:mt-0` : `mb-0`}
-              `}>
+                ${index % 2 === 0 ? `md:flex-row-reverse sm:mr-0 md:mr-8` : `md:flex-row sm:ml-0 md:ml-8`} 
+                ${index = 2 ? `lg:mb-10 md:mb-0 sm:mb-0` : `mb-0`}
+                ${index = 1 ? `lg:mt-0 md:mt-6 sm:mt-0` : `mb-0`}
+              `}
+            >
               <div className="md:shrink-0 md:w-1/2">
                 <Image className="sm:mt-0 md:mt-8 sm:rounded-none md:rounded-xl" src={props.image} alt={props.alt} style={{ width: '100%', height: 'auto' }} sizes="100vw" priority={true} />
               </div>
