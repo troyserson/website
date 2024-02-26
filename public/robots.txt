@@ -3,11 +3,10 @@ User-agent: *
 Allow: /$
 Allow: /about
 Allow: /calendar
+Allow: /reviews
 Allow: /contact
-Allow: /policy
 Allow: /sign-up
 
-# Disallows crawling of all other pages
 Disallow: /
 
 Sitemap: https://www.troyserson.com/sitemap.xml

@@ -23,7 +23,7 @@ export default function Index() {
         <meta property="og:url" content={index.link} />
       </Head>
       
-      <div className="h-screen w-full relative">
+      <div className="h-screen w-full relative overflow-hidden">
         <Image className="absolute inset-0 bg-transparent h-full w-full object-cover object-center" src={index.image} alt={index.alt} priority={true} />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/60 opacity-70" />
         
