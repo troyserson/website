@@ -41,44 +41,25 @@ export default function Blog({ allPostsData }) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={blog.link} />
       </Head>
-
-      {/* <div className="max-w-screen-sm min-h-screen mx-auto pt-8 px-4">
-        {allPostsData.map(({ id, image, alt, title, date, description }) => (
-          <div className="flex pb-6 justify-between pl-3 md:pl-0 gap-x-4" key={id}>
-            
-            <div className="flex flex-col">
-              <div className="text text-sm font-light leading-relaxed mt-2"><Date dateString={date} /></div>
-              <h2 className="text-util font-semibold leading-loose tracking-wide mt-2"><Link href={`/blog/${id}`}>{title}</Link></h2>
-              <div className="pl-0.5"><p className="text-util-3 my-2.5">{description}</p></div>
-            </div>
-
-            <div className="flex-none mr-3 md:ml-3 py-2 hidden sm:block">
-              <Link priority={true} href={`/blog/${id}`}>
-                <Image src={image} alt={alt} width={160} height={160} className="rounded-none mt-4" />
-              </Link>        
-            </div>
-
-          </div>
-        ))}
-      </div> */}
+      
       <div className="bg dark:bg-invert">
-
-        <div className="max-w-screen-sm min-h-screen mx-auto pt-8 px-4">
+        <div className="min-h-screen mx-auto sm:pt-4 pt-1 px-4 -mb-2 overflow-hidden max-w-3xl">
           {allPostsData.map(({ id, image, alt, title, date, description }) => (
-            <div className="flex pb-6 justify-between pl-3 md:pl-0 gap-x-4" key={id}>
-              
-              <div className="flex flex-col">
-                <div className="text text-sm font-light leading-relaxed mt-2"><Date dateString={date} /></div>
-                <h2 className="text-util font-semibold leading-loose tracking-wide mt-2"><Link href={`/blog/${id}`}>{title}</Link></h2>
-                <div className="pl-0.5"><p className="text-util-3 my-2.5">{description}</p></div>
-              </div>
+            <div className="flex flex-col">
+              <div className="py-2 sm:mx-6 mx-4 pl-1 sm:pl-2">
+                <div className="txt-util-3 text-sm font-light leading-relaxed mt-3"><Date dateString={date} /></div>
+                <h2 className="txt-util font-semibold leading-loose tracking-wide mt-2"><Link href={`/blog/${id}`}>{title}</Link></h2>
 
-              <div className="flex-none mr-3 md:ml-3 py-2 hidden sm:block">
-                <Link priority={true} href={`/blog/${id}`}>
-                  <Image src={image} alt={alt} width={160} height={160} className="rounded-none mt-4" />
-                </Link>        
-              </div>
+                <div className="hidden sm:block">
+                  <Link priority={true} href={`/blog/${id}`}>
+                    <Image className="float-right w-224 h-224 rounded-none pb-1 pt-1 pr-3" width={320} height={320} src={image} alt={alt} />
+                  </Link>
+                </div>
 
+                <div className="mb-3">
+                  <p className="txt-util-2 pb-3 pt-4">{description}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

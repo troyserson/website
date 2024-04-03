@@ -19,7 +19,7 @@
   .text-invert { @apply text-white dark:text-zinc-900 }
   .bg { @apply bg-white dark:bg-zinc-900 }
   .bg-invert { @apply bg-zinc-900 dark:bg-white }
-  .href { @apply hover:transition-all hover:ease-in duration-300 border-b hover:border-b-2 border-b-blue-300 dark:hover:border-b-blue-500 font-semibold }
+  .href { @apply hover:transition-all hover:ease-in duration-300 border-b-[1.5px] hover:border-b-[3px] border-b-blue-300 dark:hover:border-b-blue-500 font-semibold }
   
   .text-util-1 { @apply text-gray-800 dark:text-slate-50 sm:text-4xl text-3xl }
   .text-util-2 { @apply text-slate-600 dark:text-gray-200 sm:text-lg text-base tracking-wide }
@@ -29,6 +29,8 @@
 
   .txt { @apply text-zinc-900 }
   .txt-util { @apply text-gray-800 dark:text-gray-800 sm:text-2xl text-xl }
+  .txt-util-0 { @apply text-gray-700 dark:text-gray-800 sm:text-xl text-lg }
+  
   .txt-util-1 { @apply text-gray-800 dark:text-gray-800 sm:text-4xl text-3xl }
   .txt-util-2 { @apply text-slate-600 dark:text-slate-600 sm:text-lg text-base tracking-wide }
   .txt-util-3 { @apply text-slate-500 dark:text-slate-500 sm:text-base text-sm leading-relaxed }

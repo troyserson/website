@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.troyserson.com</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
   </url>
   <url>
     <loc>https://www.troyserson.com/about</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.troyserson.com/blog</loc>
+    <lastmod>2024-0-20</lastmod>
   </url>
   <url>
     <loc>https://www.troyserson.com/calendar</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
   </url>
   <url>
     <loc>https://www.troyserson.com/reviews</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
   </url>
   <url>
     <loc>https://www.troyserson.com/contact</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
   </url>
   <url>
     <loc>https://www.troyserson.com/sign-up</loc>
-    <lastmod>2024-02-20</lastmod>
+    <lastmod>2024-04-03</lastmod>
   </url>
 </urlset>

@@ -2,11 +2,10 @@ User-agent: *
 
 Allow: /$
 Allow: /about
+Allow: /blog
 Allow: /calendar
 Allow: /reviews
 Allow: /contact
 Allow: /sign-up
-
-Disallow: /
 
 Sitemap: https://www.troyserson.com/sitemap.xml

@@ -20,20 +20,11 @@ module.exports = {
               margin: 'auto',
               width: 'auto',
               height: 'auto',
-              maxWidth: '50%', // makes images responsive by default
-              maxHeight: 'auto', // allows images to maintain their aspect ratio
+              // maxWidth: '50%', // makes images responsive by default
+              // maxHeight: 'auto', // allows images to maintain their aspect ratio
+              maxWidth: '80%',
+              maxHeight: '80%',
             },
-            // 'img': {
-            //   display: 'block',
-            //   float: 'none',
-            //   // marginLeft: 'auto'
-            //   // marginRight: 'auto'
-            //   margin: 'auto',
-            //   width: '100%',
-            //   height: 'auto',
-            //   maxWidth: '90%', // makes images responsive by default
-            //   maxHeight: 'auto', // allows images to maintain their aspect ratio
-            // },
             // changes color of list numbers
             '--tw-prose-counters': theme('colors.gray[800]'),
             '--tw-prose-invert-counters': theme('colors.gray[200]'),
