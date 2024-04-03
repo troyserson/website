@@ -4,7 +4,6 @@ import Head from "next/head";
 // import img from "/public/troy-serson.png";
 
 import { getAllPostIds, getPostData } from "../../lib/posts.js";
-import { parseISO, format } from "date-fns";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
@@ -15,9 +14,17 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
+// import { parseISO, format } from "date-fns";
+// export function Date({ dateString }) {
+//   const date = parseISO(dateString);
+//   return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+// }
+import { parseISO, format, formatISO } from "date-fns";
 export function Date({ dateString }) {
   const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
+  const formattedDate = format(date, 'LLLL d, yyyy');
+  const isoDate = formatISO(date, { representation: 'complete' });
+  return <time dateTime={isoDate}>{formattedDate}</time>;
 }
 
 export default function Post({ postData }) {

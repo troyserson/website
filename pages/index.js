@@ -5,6 +5,24 @@ import Image from "next/image";
 import { index } from "../content.js";
 
 export default function Index() {
+  const linkedData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Troy Serson",
+    "url": "https://www.troyserson.com/",
+    "logo": "https://www.troyserson.com/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Email",
+      "url": "https://www.troyserson.com/contact"
+    },
+    "sameAs": [
+      "https://www.facebook.com/troythemusicteacher/",
+      "https://www.instagram.com/troyserson",
+      "https://www.tiktok.com/@troyserson"
+    ]
+  };
+
   return (
     <>
       <Head>
@@ -23,6 +41,8 @@ export default function Index() {
         <meta property="og:site_name" content="Troy Serson" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={index.link} />
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(linkedData) }} />
       </Head>
       
       <div className="h-screen w-full relative overflow-hidden">

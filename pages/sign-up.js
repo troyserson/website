@@ -22,11 +22,11 @@ export default function SignUp() {
         "@type": "CourseInstance",
         "name": "Complimentary Trial Lesson",
         "description": "Schedule your 1 on 1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument",
-        "provider": {
-          "@type": "Organization",
-          "name": "Troy Serson",
-          "sameAs": "https://www.troyserson.com/sign-up/"
-        },
+        // "provider": {
+        //   "@type": "Organization",
+        //   "name": "Troy Serson",
+        //   "sameAs": "https://www.troyserson.com/sign-up"
+        // },
         "courseMode": "online",
         "courseSchedule": {
           "@type": "Schedule",
@@ -39,7 +39,7 @@ export default function SignUp() {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
-      "url": "https://www.troyserson.com/sign-up/",
+      "url": "https://www.troyserson.com/sign-up",
       "validFrom": "2024-01-01",
       "validThrough": "2024-12-31",
       "category": "Music Course"
