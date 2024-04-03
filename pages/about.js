@@ -11,6 +11,10 @@ export default function About() {
   return (
     <>
       <Head>
+        {/* <link rel="icon" href="/favicon.svg" /> */}
+        <link rel="icon" href="images/favicon.ico" />
+        {/* <link rel="icon" href="favicon.ico" /> */}
+
         <link rel="canonical" href={about.link} key="canonical" />
         <title>{about.title}</title>
         <meta name="title" content={about.title} />

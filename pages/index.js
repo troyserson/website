@@ -26,6 +26,10 @@ export default function Index() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.svg" />
+        {/* <link rel="icon" href="images/favicon.ico" /> */}
+        {/* <link rel="icon" href="favicon.ico" /> */}
+
         <meta name="google-site-verification" content="4xylgkMlLoZMaQb9PuUhhXaqq6dwcIvY20Gs1wExg_s" />
 
         <link rel="canonical" href={index.link} key="canonical" />
