@@ -6,6 +6,9 @@ export default function Calendar() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
+
+        <link rel="icon" href="favicon.ico" />
         <link rel="canonical" href={calendar.link} key="canonical" />
         <title>{calendar.title}</title>
         <meta name="title" content={calendar.title} />

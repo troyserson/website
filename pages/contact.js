@@ -136,7 +136,9 @@ export default function Contact() {
   return (
     <>
       <Head>
-      <link rel="canonical" href={contact.link} key="canonical" />
+        <link rel="icon" href="favicon.svg" />
+        
+        <link rel="canonical" href={contact.link} key="canonical" />
         <title>{contact.title}</title>
         <meta name="title" content={contact.title} />
         <meta name="description" content={contact.description} key="desc" />
