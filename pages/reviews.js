@@ -45,7 +45,7 @@ export default function Reviews() {
         <meta property="og:url" content={reviews.link} />
       </Head>
 
-      <div className="text bg text-center pt-12 pb-4">
+      <div className="text bg dark:bg text-center pt-12 pb-4">
         <h1 className="text-2xl font-semibold leading-normal tracking-wide mx-auto">{reviews.h1}</h1>
         <h2 className="text-base font-light leading-loose">{reviews.h2}</h2>
       </div>

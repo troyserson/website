@@ -60,6 +60,45 @@
 //   );
 // }
 
+
+/**
+@note
+<div className="max-w-3xl mx-auto overflow-hidden flex items-center w-full">
+  <div className="relative">
+    <div className="mb-4">
+      <Image className="float-right sm:w-96 h-144 sm:h-96 sm:rounded-xl rounded-none m-0 sm:m-8 mb-4 md:mb-0" src={image} alt="Alt" priority={true} />
+    </div>
+    <div className="m-4">
+      <p className="text-util-2 pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec magna tempor, maximus augue ac, vestibulum elit. Nulla est purus, ullamcorper nec massa nec, imperdiet elementum nisi. Pellentesque et maximus neque. Quisque vestibulum nisl at dignissim ullamcorper. Etiam vulputate mollis tempor. Morbi consequat eget purus ac ultricies. Donec porta est quam, nec elementum erat dapibus id. Suspendisse vel felis nec purus pulvinar pretium quis sit amet elit. Nulla eleifend dapibus dictum. Cras euismod elit orci, vitae vehicula augue feugiat tincidunt. Nulla nec augue rhoncus, lacinia orci ut, accumsan mi. Etiam lorem odio, auctor sodales velit lobortis, tincidunt vehicula tellus.</p>
+    </div>
+  </div>
+</div>
+@note
+<div className="space-y-2 mx-auto overflow-hidden flex items-center w-full">
+  <div className="relative">
+    <div className="mb-4">
+      <Image className="float-right sm:w-96 h-144 sm:h-96 sm:rounded-xl rounded-none m-0 sm:m-8 mb-2 md:mb-4 lg:mb-6" src={image} alt="Alt" priority={true} />
+    </div>
+    <div className="m-4">
+      <p className="text-util-2 pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec magna tempor, maximus augue ac, vestibulum elit. Nulla est purus, ullamcorper nec massa nec, imperdiet elementum nisi. Pellentesque et maximus neque. Quisque vestibulum nisl at dignissim ullamcorper. Etiam vulputate mollis tempor. Morbi consequat eget purus ac ultricies. Donec porta est quam, nec elementum erat dapibus id. Suspendisse vel felis nec purus pulvinar pretium quis sit amet elit. Nulla eleifend dapibus dictum. Cras euismod elit orci, vitae vehicula augue feugiat tincidunt. Nulla nec augue rhoncus, lacinia orci ut, accumsan mi. Etiam lorem odio, auctor sodales velit lobortis, tincidunt vehicula tellus.</p>
+    </div>
+  </div>
+</div>
+
+<div className="space-y-2 mx-auto overflow-hidden flex items-center w-full">
+  <div className="relative">
+    <div className="mb-4">
+      <Image className="float-right sm:w-96 h-144 sm:h-96 sm:rounded-xl rounded-none m-0 sm:m-8 mb-2 md:mb-4 lg:mb-6" src={image} alt="Alt" priority={true} />
+    </div>
+    <div className="m-4">
+      <p className="text-util-2 pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec magna tempor, maximus augue ac, vestibulum elit. Nulla est purus, ullamcorper nec massa nec, imperdiet elementum nisi. Pellentesque et maximus neque. Quisque vestibulum nisl at dignissim ullamcorper. Etiam vulputate mollis tempor. Morbi consequat eget purus ac ultricies. Donec porta est quam, nec elementum erat dapibus id. Suspendisse vel felis nec purus pulvinar pretium quis sit amet elit. Nulla eleifend dapibus dictum. Cras euismod elit orci, vitae vehicula augue feugiat tincidunt. Nulla nec augue rhoncus, lacinia orci ut, accumsan mi. Etiam lorem odio, auctor sodales velit lobortis, tincidunt vehicula tellus.</p>
+    </div>
+  </div>
+</div>
+
+*/
+
+
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -87,8 +126,7 @@ export default function About() {
       </Head>
 
       {about.section.map((props, index) => (
-        // <Element className="grid grid-flow-col" key={index} id={index}>
-        <div className="grid grid-flow-col" key={index}>
+        <Element className="grid grid-flow-col" key={index} id={index}>
           <div className="flex items-center w-full bg">
             
             <div className={`md:flex items-center md:items-start
@@ -108,8 +146,7 @@ export default function About() {
             </div>
 
           </div>
-        </div>
-        // </Element>
+        </Element>
       ))}
     </>
   );

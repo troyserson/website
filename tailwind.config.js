@@ -8,6 +8,44 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // typography: {
+      typography: ({ theme }) => ({
+        DEFAULT: {
+          css: {
+            'img': {
+              display: 'block',
+              float: 'none',
+              // marginLeft: 'auto'
+              // marginRight: 'auto'
+              margin: 'auto',
+              width: 'auto',
+              height: 'auto',
+              maxWidth: '50%', // makes images responsive by default
+              maxHeight: 'auto', // allows images to maintain their aspect ratio
+            },
+            // 'img': {
+            //   display: 'block',
+            //   float: 'none',
+            //   // marginLeft: 'auto'
+            //   // marginRight: 'auto'
+            //   margin: 'auto',
+            //   width: '100%',
+            //   height: 'auto',
+            //   maxWidth: '90%', // makes images responsive by default
+            //   maxHeight: 'auto', // allows images to maintain their aspect ratio
+            // },
+            // changes color of list numbers
+            '--tw-prose-counters': theme('colors.gray[800]'),
+            '--tw-prose-invert-counters': theme('colors.gray[200]'),
+            // changes color of list bullets
+            '--tw-prose-bullets': theme('colors.gray[600]'),
+            '--tw-prose-invert-bullets': theme('colors.gray[300]'),
+            // https://github.com/tailwindlabs/tailwindcss-typography/blob/master/src/styles.js
+            "code::before": {content: ''},
+            "code::after": {content: ''},
+          },
+        },
+      }),
       fontFamily: { 
         rubik: ['Rubik', 'sans-serif']
       },
@@ -16,5 +54,5 @@ module.exports = {
       // },
     }
   },
-  plugins: []
+  plugins: [ require('@tailwindcss/typography') ]
 }

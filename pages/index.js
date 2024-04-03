@@ -12,8 +12,10 @@ export default function Index() {
 
         <link rel="canonical" href={index.link} key="canonical" />
         <title>{index.title}</title>
+
         <meta name="title" content={index.title} />
         <meta name="description" content={index.description} key="desc" />
+        
         <meta property="og:image" content={index.meta.image} />
         <meta property="og:image:alt" content={index.meta.alt} />
         <meta property="og:title" content={index.title} />

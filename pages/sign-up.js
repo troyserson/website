@@ -7,6 +7,45 @@ import { signUp } from "../content.js";
 const InlineWidget = dynamic(() => import("react-calendly").then((mod) => mod.InlineWidget), { ssr: false });
 
 export default function SignUp() {
+  const linkedData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Guitar, Bass, and Ukulele Lessons Online",
+    "description": "Try 1 on 1 guitar, bass, or ukulele lessons risk free...",
+    "provider": {
+      "@type": "Organization",
+      "name": "Troy Serson",
+      "sameAs": "https://www.troyserson.com/"
+    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "name": "Complimentary Trial Lesson",
+        "description": "Schedule your 1 on 1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument",
+        "provider": {
+          "@type": "Organization",
+          "name": "Troy Serson",
+          "sameAs": "https://www.troyserson.com/sign-up/"
+        },
+        "courseMode": "online",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "repeatFrequency": "Weekly",
+          "repeatCount": 12
+        }
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "url": "https://www.troyserson.com/sign-up/",
+      "validFrom": "2024-01-01",
+      "validThrough": "2024-12-31",
+      "category": "Music Course"
+    }
+  };
+
   return (
     <>
       <Head>
@@ -22,6 +61,7 @@ export default function SignUp() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={signUp.link} />
         
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(linkedData) }} />
         <Script src={signUp.url} strategy="lazyOnload" />
       </Head>
 

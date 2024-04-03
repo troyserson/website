@@ -18,6 +18,7 @@ export const layout = {
   navbar: {
     div: [
       { href: `/about`, span: `About` },
+      { href: `/blog`, span: `Blog` },
       { href: `/calendar`, span: `Calendar` },
       { href: `/reviews`, span: `Reviews` },
       { href: `/contact`, span: `Contact` },
@@ -31,8 +32,8 @@ export const layout = {
 
 /** @note /index */
 export const index = {
-  link: `https://www.troyserson.com`,
-  title: `Home | Troy Serson`,
+  link: `https://www.troyserson.com/`,
+  title: `Troy Serson`,
   description: `Discover why kids who switch to online music lessons report learning more AND having more fun (even if they say they hate online lessons). Try out guitar, bass, or ukulele risk free by...`,
   meta: {
     description: `Save time, have more fun, and discover the joy of music. Try 1 on 1 guitar, bass, or ukulele lessons risk free...`,
@@ -109,6 +110,15 @@ export const about = {
       alt: img[3].alt,
     },
   ],
+};
+
+/** @note /blog */
+export const blog = {
+  link: `https://www.troyserson.com/blog/`,
+  title: `Blog | Troy Serson`,
+  description: `Blog`,
+  image: img,
+  alt: `Photo of Troy Serson`,
 };
 
 /** @note /policy */
@@ -314,9 +324,9 @@ export const contact = {
 export const signUp = {
   link: `https://www.troyserson.com/sign-up`,
   title: `Sign Up | Troy Serson`,
-  description: `Schedule your 1-on-1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
+  description: `Schedule your 1 on 1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
   meta: {
-    description: `Schedule your 1-on-1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
+    description: `Schedule your 1 on 1 complimentary trial lesson with Troy to explore the basics or any topic on your instrument`,
     image: img[1].image,
     alt: img[1].alt,
   },
